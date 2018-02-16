@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/Library/Caches/Rider2017.3/resharper-host/local/Transient/ReSharperHost/v11/SolutionCaches/_VictimApplication.-218758000.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="VictimApplication.Core" t="IncludeRecursive">
+        <e p="App.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Services" t="Include">
+          <e p="User.cs" t="Include" />
+        </e>
+        <e p="VictimApplication.Core.csproj" t="IncludeRecursive" />
+        <e p="ViewModels" t="Include">
+          <e p="InformationViewModel.cs" t="Include" />
+          <e p="LoginViewModel.cs" t="Include" />
+          <e p="MainViewModel.cs" t="Include" />
+          <e p="MenuViewModel.cs" t="Include" />
+          <e p="MessangerViewModel.cs" t="Include" />
+          <e p="PoliceDetailsViewModel.cs" t="Include" />
+        </e>
+      </e>
+      <e p="VictimApplication.Droid" t="IncludeRecursive">
+        <e p="Assets" t="Include">
+          <e p="AboutAssets.txt" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="DebugTrace.cs" t="Include" />
+        <e p="LinkerPleaseInclude.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AndroidManifest.xml" t="Include" />
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Resources" t="Include">
+          <e p="AboutResources.txt" t="Include" />
+          <e p="drawable" t="Include">
+            <e p="splash.png" t="Include" />
+          </e>
+          <e p="layout" t="Include">
+            <e p="InformationView.axml" t="Include" />
+            <e p="LoginView.axml" t="Include" />
+            <e p="Main.axml" t="Include" />
+            <e p="MainView.axml" t="Include" />
+            <e p="MenuView.axml" t="Include" />
+            <e p="MessangerView.axml" t="Include" />
+            <e p="PoliceDetailsView.axml" t="Include" />
+            <e p="SplashScreen.axml" t="Include" />
+          </e>
+          <e p="mipmap-hdpi" t="Include">
+            <e p="Icon.png" t="Include" />
+          </e>
+          <e p="mipmap-mdpi" t="Include">
+            <e p="Icon.png" t="Include" />
+          </e>
+          <e p="mipmap-xhdpi" t="Include">
+            <e p="Icon.png" t="Include" />
+          </e>
+          <e p="mipmap-xxhdpi" t="Include">
+            <e p="Icon.png" t="Include" />
+          </e>
+          <e p="mipmap-xxxhdpi" t="Include">
+            <e p="Icon.png" t="Include" />
+          </e>
+          <e p="Resource.designer.cs" t="Include" />
+          <e p="values" t="Include">
+            <e p="SplashStyle.xml" t="Include" />
+            <e p="Strings.xml" t="Include" />
+          </e>
+        </e>
+        <e p="Setup.cs" t="Include" />
+        <e p="SplashScreen.cs" t="Include" />
+        <e p="VictimApplication.Droid.csproj" t="IncludeRecursive" />
+        <e p="Views" t="Include">
+          <e p="InformationView.cs" t="Include" />
+          <e p="LoginView.cs" t="Include" />
+          <e p="MainView.cs" t="Include" />
+          <e p="MenuView.cs" t="Include" />
+          <e p="MessangerView.cs" t="Include" />
+          <e p="PoliceDetailsView.cs" t="Include" />
+        </e>
+      </e>
+      <e p="VictimApplication.iOS" t="IncludeRecursive">
+        <e p="AppDelegate.cs" t="Include" />
+        <e p="AppDelegate.cs.txt" t="Include" />
+        <e p="Assets.xcassets" t="Include">
+          <e p="AppIcon.appiconset" t="Include">
+            <e p="Contents.json" t="Include" />
+          </e>
+          <e p="Contents.json" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="DebugTrace.cs" t="Include" />
+        <e p="Entitlements.plist" t="Include" />
+        <e p="Info.plist" t="Include" />
+        <e p="LaunchScreen.storyboard" t="Include" />
+        <e p="LinkerPleaseInclude.cs" t="Include" />
+        <e p="Main.cs" t="Include" />
+        <e p="Main.storyboard" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="Resources" t="Include" />
+        <e p="Setup.cs" t="Include" />
+        <e p="ToDo-MvvmCross" t="Include">
+          <e p="_ iOS UI.txt" t="Include" />
+        </e>
+        <e p="VictimApplication.iOS.csproj" t="IncludeRecursive" />
+        <e p="ViewController.cs" t="Include" />
+        <e p="ViewController.designer.cs" t="Include" />
+        <e p="Views" t="Include">
+          <e p="InformationView.cs" t="Include" />
+          <e p="InformationView.designer.cs" t="Include" />
+          <e p="InformationView.xib" t="Include" />
+          <e p="LoginView.cs" t="Include" />
+          <e p="LoginView.designer.cs" t="Include" />
+          <e p="LoginView.xib" t="Include" />
+          <e p="MainView.cs" t="Include" />
+          <e p="MainView.designer.cs" t="Include" />
+          <e p="MainView.xib" t="Include" />
+          <e p="MenuView.cs" t="Include" />
+          <e p="MenuView.designer.cs" t="Include" />
+          <e p="MenuView.xib" t="Include" />
+          <e p="MessangerView.cs" t="Include" />
+          <e p="MessangerView.designer.cs" t="Include" />
+          <e p="MessangerView.xib" t="Include" />
+          <e p="PoliceDetailsView.cs" t="Include" />
+          <e p="PoliceDetailsView.designer.cs" t="Include" />
+          <e p="PoliceDetailsView.xib" t="Include" />
+        </e>
+      </e>
+      <e p="VictimApplication.sln" t="IncludeFlat" />
+    </e>
+  </component>
+</project>
