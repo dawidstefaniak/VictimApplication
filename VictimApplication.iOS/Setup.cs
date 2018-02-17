@@ -3,6 +3,7 @@ using MvvmCross.iOS.Platform;
 using MvvmCross.iOS.Views.Presenters;
 using MvvmCross.Platform.Platform;
 using UIKit;
+using VictimApplication.Core;
 
 namespace VictimApplication.iOS
 {
@@ -20,7 +21,7 @@ namespace VictimApplication.iOS
 
         protected override IMvxApplication CreateApp()
         {
-            return new Core.App();
+            return new App();
         }
         
         protected override IMvxTrace CreateDebugTrace()

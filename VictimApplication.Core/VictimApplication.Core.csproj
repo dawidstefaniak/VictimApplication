@@ -30,12 +30,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="App.cs" />
-    <Compile Include="Services\User.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />
     <Compile Include="ViewModels\MenuViewModel.cs" />
     <Compile Include="ViewModels\InformationViewModel.cs" />
     <Compile Include="ViewModels\MessangerViewModel.cs" />
     <Compile Include="ViewModels\PoliceDetailsViewModel.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Repository.cs" />
+    <Compile Include="Models\Message.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MvvmCross.Platform">
@@ -68,6 +70,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Services\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
 </Project>

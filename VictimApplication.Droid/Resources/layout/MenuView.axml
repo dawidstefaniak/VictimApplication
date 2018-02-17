@@ -19,7 +19,7 @@
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Messange your Police"
+        android:text="Message your Police"
         android:textSize="20dp"
         local:MvxBind="Click ShowMessangerCommand" />
     <Button

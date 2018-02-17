@@ -1,6 +1,6 @@
-﻿// WARNING
+// WARNING
 //
-// This file has been generated automatically by Xamarin Studio from the outlets and
+// This file has been generated automatically by Visual Studio from the outlets and
 // actions declared in your storyboard file.
 // Manual changes to this file will not be maintained.
 //
@@ -11,11 +11,46 @@ using UIKit;
 
 namespace VictimApplication.iOS.Views
 {
-    [Register("MenuView")]
+    [Register ("MenuView")]
     partial class MenuView
     {
-        void ReleaseDesignerOutlets()
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton VCInformation { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton VCLogout { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton VCMessanger { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton VCPoliceDetails { get; set; }
+
+        void ReleaseDesignerOutlets ()
         {
+            if (VCInformation != null) {
+                VCInformation.Dispose ();
+                VCInformation = null;
+            }
+
+            if (VCLogout != null) {
+                VCLogout.Dispose ();
+                VCLogout = null;
+            }
+
+            if (VCMessanger != null) {
+                VCMessanger.Dispose ();
+                VCMessanger = null;
+            }
+
+            if (VCPoliceDetails != null) {
+                VCPoliceDetails.Dispose ();
+                VCPoliceDetails = null;
+            }
         }
     }
 }
