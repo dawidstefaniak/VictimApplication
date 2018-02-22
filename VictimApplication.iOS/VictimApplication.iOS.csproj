@@ -184,5 +184,9 @@
       <Name>VictimApplication.Core</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Northumbria Police Logo.PNG" />
+    <BundleResource Include="Resources\BottomBanner.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

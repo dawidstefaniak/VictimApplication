@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" useAutolayout="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,48 +16,90 @@
                 <outlet property="VCLogin" destination="145" id="name-outlet-145"/>
                 <outlet property="VCPasswordLabel" destination="148" id="name-outlet-148"/>
                 <outlet property="VCLoginLabel" destination="142" id="name-outlet-142"/>
+                <outlet property="NorthumbriaLogo" destination="518" id="name-outlet-518"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="2">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" customColorSpace="sRGB" colorSpace="calibratedWhite" white="1" alpha="1"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="142" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                    <rect key="frame" x="165" y="112" width="42" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="142" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO">
+                    <rect key="frame" x="83" y="215" width="51" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="145" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                    <rect key="frame" x="138" y="190" width="97" height="30"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="145" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO">
+                    <rect key="frame" x="142" y="210" width="172" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="148" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                    <rect key="frame" x="134" y="242" width="104" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="148" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO">
+                    <rect key="frame" x="60" y="282" width="104" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="151" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                    <rect key="frame" x="125" y="271" width="97" height="30"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="151" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO">
+                    <rect key="frame" x="142" y="278" width="172" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="154" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                    <rect key="frame" x="176" y="400" width="46" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="154" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" hasAttributedTitle="YES">
+                    <rect key="frame" x="205" y="338" width="46" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Login"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Login">
+                                <attributes>
+                                    <font key="NSFont" name="HelveticaNeue" size="17"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
                 </button>
+                <view contentMode="scaleToFill" id="518" fixedFrame="YES">
+                    <rect key="frame" x="48" y="45" width="280" height="129"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="408" translatesAutoresizingMaskIntoConstraints="NO" image="Northumbria Police Logo.PNG" fixedFrame="YES">
+                            <rect key="frame" x="20" y="20" width="240" height="89"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <point key="canvasLocation" x="358" y="18"/>
+                        </imageView>
+                    </subviews>
+                    <accessibility key="accessibilityConfiguration">
+                        <accessibilityTraits key="traits" image="YES"/>
+                    </accessibility>
+                </view>
+                <view contentMode="redraw" id="858" fixedFrame="YES" semanticContentAttribute="forceLeftToRight">
+                    <rect key="frame" x="31" y="387" width="326" height="169"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="1107" image="BottomBanner.png" fixedFrame="YES">
+                            <rect key="frame" x="8" y="8" width="240" height="128"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <point key="canvasLocation" x="848.3333" y="50.63769"/>
+                        </imageView>
+                    </subviews>
+                    <accessibility key="accessibilityConfiguration">
+                        <accessibilityTraits key="traits" image="YES"/>
+                    </accessibility>
+                </view>
             </subviews>
+            <point key="canvasLocation" x="460" y="-8"/>
         </view>
     </objects>
+    <resources>
+        <image name="Northumbria Police Logo.PNG" width="211" height="85"/>
+        <image name="BottomBanner.png" width="840" height="196"/>
+    </resources>
 </document>

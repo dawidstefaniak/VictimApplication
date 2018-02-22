@@ -16,6 +16,10 @@ namespace VictimApplication.iOS.Views
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIView NorthumbriaLogo { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UITextField VCLogin { get; set; }
 
         [Outlet]
@@ -36,6 +40,11 @@ namespace VictimApplication.iOS.Views
 
         void ReleaseDesignerOutlets ()
         {
+            if (NorthumbriaLogo != null) {
+                NorthumbriaLogo.Dispose ();
+                NorthumbriaLogo = null;
+            }
+
             if (VCLogin != null) {
                 VCLogin.Dispose ();
                 VCLogin = null;

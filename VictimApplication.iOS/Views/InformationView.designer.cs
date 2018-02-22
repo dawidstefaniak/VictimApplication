@@ -22,6 +22,10 @@ namespace VictimApplication.iOS.Views
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UILabel VCInformation { get; set; }
 
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton VCMoreInfo { get; set; }
+
         void ReleaseDesignerOutlets ()
         {
             if (VCBack != null) {
@@ -32,6 +36,11 @@ namespace VictimApplication.iOS.Views
             if (VCInformation != null) {
                 VCInformation.Dispose ();
                 VCInformation = null;
+            }
+
+            if (VCMoreInfo != null) {
+                VCMoreInfo.Dispose ();
+                VCMoreInfo = null;
             }
         }
     }
