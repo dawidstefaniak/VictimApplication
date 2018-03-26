@@ -19,13 +19,12 @@ namespace VictimApplication.Core.ViewModels
         }
 
         private string _password = "";
+
         public string Password
         {
             get { return _password; }
             set { SetProperty(ref _password, value); }
         }
-
-
 
         public IMvxCommand LoginCommand => new MvxCommand(LoginToMenu);
         public IMvxCommand ShowMenuCommand => new MvxCommand(ShowMenu);

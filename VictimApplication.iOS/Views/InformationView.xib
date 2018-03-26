@@ -47,4 +47,8 @@
             <point key="canvasLocation" x="767" y="0.0"/>
         </textView>
     </objects>
+    <resources>
+        <image name="Northumbria Police Logo.PNG" width="211" height="85"/>
+        <image name="BottomBanner.png" width="840" height="196"/>
+    </resources>
 </document>

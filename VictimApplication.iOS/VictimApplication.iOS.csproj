@@ -179,14 +179,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\VictimApplication.Core\VictimApplication.Core.csproj">
-      <Project>{702C8006-D5F5-4EC5-A46C-FD1233694079}</Project>
-      <Name>VictimApplication.Core</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <BundleResource Include="Resources\Northumbria Police Logo.PNG" />
     <BundleResource Include="Resources\BottomBanner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VictimApplication.Shared\VictimApplication.Core.csproj">
+      <Project>{C90C214A-C43D-45BF-9A90-5AAD6256812A}</Project>
+      <Name>VictimApplication.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
