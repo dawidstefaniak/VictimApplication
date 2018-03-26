@@ -11,6 +11,7 @@
     <PackageReference Include="Microsoft.NETCore.Portable.Compatibility" Version="1.0.1" />
     <PackageReference Include="MvvmCross" Version="5.7.0" />
     <PackageReference Include="sqlite-net-pcl" Version="1.5.166-beta" />
+    <PackageReference Include="Refit" Version="4.3.0" />
   </ItemGroup>
     
   <ItemGroup>

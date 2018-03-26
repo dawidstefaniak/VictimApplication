@@ -1,5 +1,9 @@
-﻿<Properties StartupConfiguration="{9246B093-3E86-4D14-8285-3377312FEE24}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
-  <MonoDevelop.Ide.Workbench />
+﻿<Properties StartupConfiguration="{B69E434E-C373-4F2E-BAE3-13D2B9E8F7B5}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../../../Library/Frameworks/Mono.framework/Versions/5.8.0/lib/mono/msbuild/15.0/bin/Microsoft.Common.CurrentVersion.targets">
+    <Files>
+      <File FileName="../../../../Library/Frameworks/Mono.framework/Versions/5.8.0/lib/mono/msbuild/15.0/bin/Microsoft.Common.CurrentVersion.targets" Line="2057" Column="5" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.VictimApplication.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.35D5AF58-546B-4E75-A5FE-72FE47CC19DF">
     <MonoDevelop.MacDev.AppleDevelopmentTeam />
