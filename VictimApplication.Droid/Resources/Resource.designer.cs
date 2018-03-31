@@ -149,7 +149,10 @@ namespace VictimApplication.Droid
 			public const int PoliceDetailsView = 2130968582;
 			
 			// aapt resource value: 0x7f040007
-			public const int SplashScreen = 2130968583;
+			public const int RegisterView = 2130968583;
+			
+			// aapt resource value: 0x7f040008
+			public const int SplashScreen = 2130968584;
 			
 			static Layout()
 			{

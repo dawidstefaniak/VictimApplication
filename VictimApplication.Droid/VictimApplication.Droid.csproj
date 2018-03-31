@@ -148,6 +148,7 @@
     <AndroidResource Include="Resources\layout\MenuView.axml" />
     <AndroidResource Include="Resources\layout\MessangerView.axml" />
     <AndroidResource Include="Resources\layout\PoliceDetailsView.axml" />
+    <AndroidResource Include="Resources\layout\RegisterView.axml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />

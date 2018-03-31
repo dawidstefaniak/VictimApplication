@@ -1,13 +1,15 @@
 ﻿<Properties StartupConfiguration="{B69E434E-C373-4F2E-BAE3-13D2B9E8F7B5}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
   <MonoDevelop.Ide.Workbench ActiveDocument="VictimApplication.Core/ViewModels/LoginViewModel.cs">
     <Files>
-      <File FileName="VictimApplication.Core/ViewModels/LoginViewModel.cs" Line="44" Column="33" />
+      <File FileName="VictimApplication.Core/ViewModels/LoginViewModel.cs" Line="24" Column="28" />
       <File FileName="VictimApplication.Core/App.cs" Line="25" Column="63" />
       <File FileName="VictimApplication.Core/Repository.cs" Line="53" Column="24" />
       <File FileName="VictimApplication.Core/ViewModels/MainViewModel.cs" Line="1" Column="1" />
       <File FileName="VictimApplication.Core/Services/IApi.cs" Line="13" Column="1" />
       <File FileName="VictimApplication.iOS/Views/LoginView.cs" Line="1" Column="1" />
       <File FileName="VictimApplication.iOS/Views/LoginView.xib" />
+      <File FileName="VictimApplication.Core/ViewModels/RegisterViewModel.cs" Line="41" Column="67" />
+      <File FileName="VictimApplication.Core/ViewModels/PoliceDetailsViewModel.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
