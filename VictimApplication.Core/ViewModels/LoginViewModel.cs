@@ -3,11 +3,20 @@ using MvvmCross.Core.ViewModels;
 using VictimApplication.Core.ViewModels;
 using System.Windows.Input;
 using VictimApplication.Core.Models;
+using VictimApplication.Core.Services;
+using System.Threading.Tasks;
 
 namespace VictimApplication.Core.ViewModels
 {
     public class LoginViewModel : MvxViewModel
     {
+        private readonly IApi _api;
+        public LoginViewModel(IApi api)
+        {
+            _api = api;
+        }
+
+
         User _user;
 
         private string _login = "";
@@ -28,6 +37,7 @@ namespace VictimApplication.Core.ViewModels
 
         public IMvxCommand LoginCommand => new MvxCommand(LoginToMenu);
         public IMvxCommand ShowMenuCommand => new MvxCommand(ShowMenu);
+        public IMvxCommand ShowMenuCommand2 => new MvxAsyncCommand(CallApi);
 
         private void LoginToMenu()
         {
@@ -46,6 +56,11 @@ namespace VictimApplication.Core.ViewModels
         private void ShowMenu()
         {
             ShowViewModel<MenuViewModel>();
+        }
+
+        async Task CallApi()
+        {
+            Login = await _api.GetSample();
         }
     }
 }
