@@ -108,12 +108,6 @@ namespace VictimApplication.Droid
 			// aapt resource value: 0x7f050001
 			public const int MvxBindingTagUnique = 2131034113;
 			
-			// aapt resource value: 0x7f050002
-			public const int myButton = 2131034114;
-			
-			// aapt resource value: 0x7f050003
-			public const int textView1 = 2131034115;
-			
 			static Id()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -134,25 +128,22 @@ namespace VictimApplication.Droid
 			public const int LoginView = 2130968577;
 			
 			// aapt resource value: 0x7f040002
-			public const int Main = 2130968578;
+			public const int MainView = 2130968578;
 			
 			// aapt resource value: 0x7f040003
-			public const int MainView = 2130968579;
+			public const int MenuView = 2130968579;
 			
 			// aapt resource value: 0x7f040004
-			public const int MenuView = 2130968580;
+			public const int MessangerView = 2130968580;
 			
 			// aapt resource value: 0x7f040005
-			public const int MessangerView = 2130968581;
+			public const int PoliceDetailsView = 2130968581;
 			
 			// aapt resource value: 0x7f040006
-			public const int PoliceDetailsView = 2130968582;
+			public const int RegisterView = 2130968582;
 			
 			// aapt resource value: 0x7f040007
-			public const int RegisterView = 2130968583;
-			
-			// aapt resource value: 0x7f040008
-			public const int SplashScreen = 2130968584;
+			public const int SplashScreen = 2130968583;
 			
 			static Layout()
 			{
@@ -183,11 +174,8 @@ namespace VictimApplication.Droid
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f070001
-			public const int app_name = 2131165185;
-			
 			// aapt resource value: 0x7f070000
-			public const int hello = 2131165184;
+			public const int app_name = 2131165184;
 			
 			static String()
 			{

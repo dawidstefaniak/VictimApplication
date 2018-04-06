@@ -1,15 +1,22 @@
-﻿<Properties StartupConfiguration="{B69E434E-C373-4F2E-BAE3-13D2B9E8F7B5}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
-  <MonoDevelop.Ide.Workbench ActiveDocument="VictimApplication.Core/ViewModels/LoginViewModel.cs">
+﻿<Properties StartupConfiguration="{480C6E0A-6D18-473A-AFB2-AF8C7183DEA6}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Source Not Available">
     <Files>
-      <File FileName="VictimApplication.Core/ViewModels/LoginViewModel.cs" Line="24" Column="28" />
+      <File FileName="VictimApplication.Core/ViewModels/LoginViewModel.cs" Line="40" Column="28" />
       <File FileName="VictimApplication.Core/App.cs" Line="25" Column="63" />
       <File FileName="VictimApplication.Core/Repository.cs" Line="53" Column="24" />
       <File FileName="VictimApplication.Core/ViewModels/MainViewModel.cs" Line="1" Column="1" />
       <File FileName="VictimApplication.Core/Services/IApi.cs" Line="13" Column="1" />
-      <File FileName="VictimApplication.iOS/Views/LoginView.cs" Line="1" Column="1" />
+      <File FileName="VictimApplication.iOS/Views/LoginView.cs" Line="32" Column="47" />
       <File FileName="VictimApplication.iOS/Views/LoginView.xib" />
-      <File FileName="VictimApplication.Core/ViewModels/RegisterViewModel.cs" Line="41" Column="67" />
+      <File FileName="VictimApplication.Core/ViewModels/RegisterViewModel.cs" Line="57" Column="13" />
       <File FileName="VictimApplication.Core/ViewModels/PoliceDetailsViewModel.cs" Line="1" Column="1" />
+      <File FileName="VictimApplication.Droid/MainActivity.cs" Line="1" Column="1" />
+      <File FileName="VictimApplication.Droid/packages.config" Line="1" Column="1" />
+      <File FileName="VictimApplication.Droid/ToDo-MvvmCross/_ Droid UI.txt" Line="1" Column="1" />
+      <File FileName="../../../../Library/Frameworks/Xamarin.Android.framework/Versions/8.2.0-16/lib/xamarin.android/xbuild/Xamarin/Android/Xamarin.Android.Common.targets" Line="1528" Column="2" />
+      <File FileName="VictimApplication.Droid/obj/Debug/android/manifest/AndroidManifest.xml" Line="19" Column="57" />
+      <File FileName="VictimApplication.Droid/Resources/layout/LoginView.axml" Line="22" Column="50" />
+      <File FileName="Source Not Available" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -21,5 +28,5 @@
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.VictimApplication.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_ARMv7a_Nougat" />
+  <MonoDevelop.Ide.ItemProperties.VictimApplication.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
 </Properties>

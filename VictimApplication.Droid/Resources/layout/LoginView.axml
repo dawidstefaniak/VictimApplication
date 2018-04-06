@@ -19,5 +19,5 @@
         android:layout_height="wrap_content"
         android:text="Login"
         android:textSize="25dp"
-        local:MvxBind="Click LoginCommand" />
+        local:MvxBind="Click ShowMenuCommand2" />
 </LinearLayout>
