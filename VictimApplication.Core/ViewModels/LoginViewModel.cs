@@ -5,6 +5,8 @@ using System.Windows.Input;
 using VictimApplication.Core.Models;
 using VictimApplication.Core.Services;
 using System.Threading.Tasks;
+using System.Security.Cryptography.X509Certificates;
+using System.Net.Security;
 
 namespace VictimApplication.Core.ViewModels
 {
@@ -39,6 +41,7 @@ namespace VictimApplication.Core.ViewModels
         public IMvxCommand ShowMenuCommand => new MvxCommand(ShowMenu);
         public IMvxCommand ShowMenuCommand2 => new MvxAsyncCommand(CallApi);
 
+
         private void LoginToMenu()
         {
             if (_user.IsValid())
@@ -60,6 +63,7 @@ namespace VictimApplication.Core.ViewModels
 
         async Task CallApi()
         {
+            System.Diagnostics.Process.Start("mozroots", "--import --quiet");
             Login = await _api.GetSample();
         }
     }
