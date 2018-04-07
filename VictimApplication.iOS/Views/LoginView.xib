@@ -17,6 +17,7 @@
                 <outlet property="VCPasswordLabel" destination="148" id="name-outlet-148"/>
                 <outlet property="VCLoginLabel" destination="142" id="name-outlet-142"/>
                 <outlet property="NorthumbriaLogo" destination="518" id="name-outlet-518"/>
+                <outlet property="VCRegister" destination="1249" id="name-outlet-1249"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -54,7 +55,7 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="154" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" hasAttributedTitle="YES">
-                    <rect key="frame" x="205" y="338" width="46" height="30"/>
+                    <rect key="frame" x="240" y="338" width="46" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal">
                         <attributedString key="attributedTitle">
@@ -94,6 +95,11 @@
                         <accessibilityTraits key="traits" image="YES"/>
                     </accessibility>
                 </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1249" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                    <rect key="frame" x="76" y="338" width="98" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Register"/>
+                </button>
             </subviews>
             <point key="canvasLocation" x="460" y="-8"/>
         </view>

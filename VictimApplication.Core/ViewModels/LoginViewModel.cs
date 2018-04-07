@@ -18,6 +18,11 @@ namespace VictimApplication.Core.ViewModels
             _api = api;
         }
 
+        public void Init(User user = null)
+        {
+            _user = user == null ? new User() : user;
+            RaiseAllPropertiesChanged();
+        }
 
         User _user;
 
@@ -40,6 +45,8 @@ namespace VictimApplication.Core.ViewModels
         public IMvxCommand LoginCommand => new MvxCommand(LoginToMenu);
         public IMvxCommand ShowMenuCommand => new MvxCommand(ShowMenu);
         public IMvxCommand ShowMenuCommand2 => new MvxAsyncCommand(CallApi);
+        public IMvxCommand RegisterCommand => new MvxCommand(Register);
+
 
 
         private void LoginToMenu()
@@ -50,10 +57,9 @@ namespace VictimApplication.Core.ViewModels
             }
         }
 
-        public void Init (User user = null)
+        private void Register()
         {
-            _user = user == null ? new User() : user;
-            RaiseAllPropertiesChanged();
+            ShowViewModel<RegisterViewModel>();
         }
 
         private void ShowMenu()
@@ -63,7 +69,7 @@ namespace VictimApplication.Core.ViewModels
 
         async Task CallApi()
         {
-            System.Diagnostics.Process.Start("mozroots", "--import --quiet");
+            //System.Diagnostics.Process.Start("mozroots", "--import --quiet");
             Login = await _api.GetSample();
         }
     }

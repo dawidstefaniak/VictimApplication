@@ -38,6 +38,10 @@ namespace VictimApplication.iOS.Views
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UILabel VCPasswordLabel { get; set; }
 
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton VCRegister { get; set; }
+
         void ReleaseDesignerOutlets ()
         {
             if (NorthumbriaLogo != null) {
@@ -68,6 +72,11 @@ namespace VictimApplication.iOS.Views
             if (VCPasswordLabel != null) {
                 VCPasswordLabel.Dispose ();
                 VCPasswordLabel = null;
+            }
+
+            if (VCRegister != null) {
+                VCRegister.Dispose ();
+                VCRegister = null;
             }
         }
     }
