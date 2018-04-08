@@ -1,5 +1,8 @@
 ﻿using System.Threading.Tasks;
 using MvvmCross.Core.ViewModels;
+using MvvmCross.Platform;
+using MvvmCross.Platform.Platform;
+using VictimApplication.Core.Models;
 using VictimApplication.Core.Services;
 
 namespace VictimApplication.Core.ViewModels
@@ -7,9 +10,11 @@ namespace VictimApplication.Core.ViewModels
     public class RegisterViewModel : MvxViewModel
     {
         private readonly IApi _api;
-        public RegisterViewModel(IApi api)
+        private readonly IMvxJsonConverter _jsonConverter;
+        public RegisterViewModel(IApi api, IMvxJsonConverter jsonConverter)
         {
             _api = api;
+            _jsonConverter = jsonConverter;
         }
 
 
@@ -50,7 +55,7 @@ namespace VictimApplication.Core.ViewModels
         }
 
 
-        public IMvxCommand RegisterCommand => new MvxCommand(Register);
+        public IMvxCommand RegisterCommand => new MvxAsyncCommand(Register);
         public IMvxCommand BackCommand => new MvxCommand(BackToLogin);
 
         private void BackToLogin()
@@ -58,8 +63,19 @@ namespace VictimApplication.Core.ViewModels
             ShowViewModel<MenuViewModel>();
         }
 
-        private void Register()
+        async Task Register()
         {
+            var UserForCreation = new UserForCreationDto
+            {
+                UserName = Login,
+                Password = this.Password,
+                FirstName = this.Firstname,
+                SecondName = this.Surname
+            };
+            var serializer = Mvx.Resolve<IMvxJsonConverter>();
+
+            var jsonFileToSend = serializer.SerializeObject(UserForCreation);
+
             APISendRegisterRequest();
             ShowViewModel<LoginViewModel>();
         }

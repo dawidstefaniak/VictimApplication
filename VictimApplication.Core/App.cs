@@ -1,6 +1,7 @@
 using System.Net.Http;
 using MvvmCross.Platform;
 using MvvmCross.Platform.IoC;
+using MvvmCross.Platform.Platform;
 using Refit;
 
 namespace VictimApplication.Core
@@ -24,6 +25,8 @@ namespace VictimApplication.Core
                 var client = "https://deckofcardsapi.com";
                 return RestService.For<Services.IApi>(client);
             });
+            //TODO
+            Mvx.Resolve<IMvxJsonConverter>();
         }
     }
 }
