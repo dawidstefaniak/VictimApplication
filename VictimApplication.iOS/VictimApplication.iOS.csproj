@@ -146,6 +146,9 @@
     <Reference Include="Microsoft.AspNetCore.WebUtilities">
       <HintPath>..\packages\Microsoft.AspNetCore.WebUtilities.2.0.2\lib\netstandard2.0\Microsoft.AspNetCore.WebUtilities.dll</HintPath>
     </Reference>
+    <Reference Include="MvvmCross.Plugins.Json">
+      <HintPath>..\packages\MvvmCross.Plugin.Json.5.7.0\lib\Xamarin.iOS10\MvvmCross.Plugins.Json.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
@@ -207,6 +210,7 @@
     <Compile Include="Views\RegisterView.designer.cs">
       <DependentUpon>RegisterView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Bootstrap\JsonPluginBootstrap.cs" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Northumbria Police Logo.PNG" />

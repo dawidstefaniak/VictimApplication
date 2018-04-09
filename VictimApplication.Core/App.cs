@@ -1,3 +1,4 @@
+using System;
 using System.Net.Http;
 using MvvmCross.Platform;
 using MvvmCross.Platform.IoC;
@@ -26,7 +27,6 @@ namespace VictimApplication.Core
                 return RestService.For<Services.IApi>(client);
             });
             //TODO
-            Mvx.Resolve<IMvxJsonConverter>();
         }
     }
 }
