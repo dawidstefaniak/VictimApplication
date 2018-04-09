@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using SQLite;
 
 namespace VictimApplication.Core.Models
@@ -24,10 +25,7 @@ namespace VictimApplication.Core.Models
 
         public int AssignedPolice { get; set; }
 
-        public bool IsValid()
-        {
-            return true;
-        }
+        public bool isValid {get;set;}
 
         public User()
         {
@@ -35,7 +33,7 @@ namespace VictimApplication.Core.Models
             Password = "";
             UserType = 'U';
             Name = "";
-
+            isValid = false;
         }
     }
 }

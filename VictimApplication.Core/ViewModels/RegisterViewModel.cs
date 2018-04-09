@@ -72,20 +72,10 @@ namespace VictimApplication.Core.ViewModels
                 FirstName = this.Firstname,
                 SecondName = this.Surname
             };
-            var serializer = Mvx.Resolve<IMvxJsonConverter>();
-
-            var jsonFileToSend = serializer.SerializeObject(UserForCreation);
-
-            var returned = await _api.GetDefaultUser();
 
             await _api.CreateUser(UserForCreation);
-            APISendRegisterRequest();
-            ShowViewModel<LoginViewModel>();
-        }
 
-        private void APISendRegisterRequest()
-        {
-
+            Close(this);
         }
     }
 }

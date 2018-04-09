@@ -14,7 +14,7 @@ namespace VictimApplication.Core.ViewModels
 
         private void ShowMenu()
         {
-            ShowViewModel<MenuViewModel>();
+            Close(this);
         }
     }
 }

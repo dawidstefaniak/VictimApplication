@@ -15,5 +15,9 @@ namespace VictimApplication.Core.Services
 
         [Post("/api/user/createuser")]
         Task CreateUser([Body(BodySerializationMethod.Json)] UserForCreationDto user);
+
+        [Post("/api/user/login")]
+        Task Login([Body(BodySerializationMethod.Json)] UserToLoginDto user);
+
     }
 }

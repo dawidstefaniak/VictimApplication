@@ -7,6 +7,7 @@ using VictimApplication.Core.Services;
 using System.Threading.Tasks;
 using System.Security.Cryptography.X509Certificates;
 using System.Net.Security;
+using MessangesAPI.Models;
 
 namespace VictimApplication.Core.ViewModels
 {
@@ -42,24 +43,26 @@ namespace VictimApplication.Core.ViewModels
             set { SetProperty(ref _password, value); }
         }
 
-        public IMvxCommand LoginCommand => new MvxCommand(LoginToMenu);
+        public IMvxCommand LoginCommand => new MvxAsyncCommand(LoginToMenu);
         public IMvxCommand ShowMenuCommand => new MvxCommand(ShowMenu);
-        public IMvxCommand ShowMenuCommand2 => new MvxAsyncCommand(CallApi);
         public IMvxCommand RegisterCommand => new MvxCommand(Register);
 
 
 
-        private void LoginToMenu()
+        async Task LoginToMenu()
         {
-            if (_user.IsValid())
+            var user = new UserToLoginDto
             {
-                ShowMenu();
-            }
+                UserName = Login,
+                Password = this.Password
+            };
+            await _api.Login(user);
         }
 
         private void Register()
         {
             ShowViewModel<RegisterViewModel>();
+
         }
 
         private void ShowMenu()
@@ -67,10 +70,5 @@ namespace VictimApplication.Core.ViewModels
             ShowViewModel<MenuViewModel>();
         }
 
-        async Task CallApi()
-        {
-            //System.Diagnostics.Process.Start("mozroots", "--import --quiet");
-            Login = await _api.GetSample();
-        }
     }
 }
