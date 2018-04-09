@@ -76,6 +76,9 @@ namespace VictimApplication.Core.ViewModels
 
             var jsonFileToSend = serializer.SerializeObject(UserForCreation);
 
+            var returned = await _api.GetDefaultUser();
+
+            await _api.CreateUser(UserForCreation);
             APISendRegisterRequest();
             ShowViewModel<LoginViewModel>();
         }

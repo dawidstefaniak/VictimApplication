@@ -23,7 +23,7 @@ namespace VictimApplication.Core
         {
             Mvx.RegisterType(() =>
             {
-                var client = "https://deckofcardsapi.com";
+                var client = "http://localhost:63082";
                 return RestService.For<Services.IApi>(client);
             });
             //TODO
