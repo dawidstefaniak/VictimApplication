@@ -1,5 +1,6 @@
 using System;
 using System.Net.Http;
+using Acr.UserDialogs;
 using MvvmCross.Platform;
 using MvvmCross.Platform.IoC;
 using MvvmCross.Platform.Platform;
@@ -21,12 +22,14 @@ namespace VictimApplication.Core
         }
         public App()
         {
+            //API
             Mvx.RegisterType(() =>
             {
                 var client = "http://localhost:63082";
                 return RestService.For<Services.IApi>(client);
             });
-            //TODO
+            //UserDialogs
+            Mvx.RegisterSingleton<IUserDialogs>(() => UserDialogs.Instance);
         }
     }
 }

@@ -1,4 +1,6 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
+using Acr.UserDialogs;
 using MvvmCross.Core.ViewModels;
 using MvvmCross.Platform;
 using MvvmCross.Platform.Platform;
@@ -11,10 +13,12 @@ namespace VictimApplication.Core.ViewModels
     {
         private readonly IApi _api;
         private readonly IMvxJsonConverter _jsonConverter;
-        public RegisterViewModel(IApi api, IMvxJsonConverter jsonConverter)
+        private readonly IUserDialogs _userDialogs;
+        public RegisterViewModel(IApi api, IMvxJsonConverter jsonConverter, IUserDialogs userDialogs)
         {
             _api = api;
             _jsonConverter = jsonConverter;
+            _userDialogs = userDialogs;
         }
 
 
@@ -72,9 +76,14 @@ namespace VictimApplication.Core.ViewModels
                 FirstName = this.Firstname,
                 SecondName = this.Surname
             };
-
-            await _api.CreateUser(UserForCreation);
-
+            try
+            {
+                await _api.CreateUser(UserForCreation);
+            }
+            catch(Exception ex)
+            {
+                _userDialogs.Alert(ex.Message, "Error", "OK");
+            }
             Close(this);
         }
     }

@@ -18,7 +18,7 @@ namespace VictimApplication.iOS.Views
 
             this.CreateBinding(VCLogin).To((LoginViewModel vm) => vm.Login).Apply();
             this.CreateBinding(VCPassword).To((LoginViewModel vm) => vm.Password).Apply();
-            this.CreateBinding(VCLoginToMenu).To((LoginViewModel vm) => vm.ShowMenuCommand).Apply();
+            this.CreateBinding(VCLoginToMenu).To((LoginViewModel vm) => vm.LoginCommand).Apply();
             this.CreateBinding(VCRegister).To((LoginViewModel vm) => vm.RegisterCommand).Apply();
 
             View.AddGestureRecognizer(new UITapGestureRecognizer(() => {

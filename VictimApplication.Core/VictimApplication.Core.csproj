@@ -12,6 +12,7 @@
     <PackageReference Include="MvvmCross" Version="5.7.0" />
     <PackageReference Include="sqlite-net-pcl" Version="1.5.166-beta" />
     <PackageReference Include="Refit" Version="4.3.0" />
+    <PackageReference Include="Acr.UserDialogs" Version="7.0.1" />
   </ItemGroup>
     
   <ItemGroup>

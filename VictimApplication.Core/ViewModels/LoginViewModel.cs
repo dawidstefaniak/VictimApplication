@@ -7,16 +7,18 @@ using VictimApplication.Core.Services;
 using System.Threading.Tasks;
 using System.Security.Cryptography.X509Certificates;
 using System.Net.Security;
-using MessangesAPI.Models;
+using Acr.UserDialogs;
 
 namespace VictimApplication.Core.ViewModels
 {
     public class LoginViewModel : MvxViewModel
     {
         private readonly IApi _api;
-        public LoginViewModel(IApi api)
+        private readonly IUserDialogs _userDialogs;
+        public LoginViewModel(IApi api, IUserDialogs userDialogs)
         {
             _api = api;
+            _userDialogs = userDialogs;
         }
 
         public void Init(User user = null)
@@ -56,7 +58,16 @@ namespace VictimApplication.Core.ViewModels
                 UserName = Login,
                 Password = this.Password
             };
-            await _api.Login(user);
+            try
+            {
+                var stringer = await _api.Login(user);
+                ShowViewModel<MenuViewModel>();
+            }
+            catch (Exception ex)
+            {
+                _userDialogs.Alert($"Wrong Username or Password, {ex.Message}");
+            }
+
         }
 
         private void Register()

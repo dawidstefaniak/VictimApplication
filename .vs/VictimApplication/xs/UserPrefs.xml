@@ -1,26 +1,18 @@
-﻿<Properties StartupConfiguration="{B69E434E-C373-4F2E-BAE3-13D2B9E8F7B5}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="VictimApplication.Core/Models/LoggedUserDto.cs">
+﻿<Properties StartupConfiguration="{480C6E0A-6D18-473A-AFB2-AF8C7183DEA6}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="VictimApplication.Core/App.cs">
     <Files>
-      <File FileName="VictimApplication.Core/Models/LoggedUserDto.cs" Line="2" Column="40" />
-      <File FileName="VictimApplication.iOS/Views/RegisterView.cs" Line="29" Column="44" />
-      <File FileName="VictimApplication.Core/ViewModels/RegisterViewModel.cs" Line="27" Column="10" />
-      <File FileName="VictimApplication.Core/Models/User.cs" Line="2" Column="30" />
-      <File FileName="VictimApplication.Core/Models/MessageForSendDto.cs" Line="12" Column="6" />
-      <File FileName="VictimApplication.Core/Repository.cs" Line="53" Column="59" />
-      <File FileName="VictimApplication.Core/App.cs" Line="28" Column="16" />
-      <File FileName="VictimApplication.Core/ViewModels/MenuViewModel.cs" Line="25" Column="49" />
-      <File FileName="VictimApplication.Core/ViewModels/MainViewModel.cs" Line="1" Column="1" />
-      <File FileName="VictimApplication.iOS/Main.cs" Line="12" Column="1" />
-      <File FileName="VictimApplication.Core/Services/IApi.cs" Line="2" Column="30" />
-      <File FileName="VictimApplication.Core/Models/UserToLoginDto.cs" Line="6" Column="11" />
-      <File FileName="VictimApplication.Core/Models/Message.cs" Line="1" Column="1" />
+      <File FileName="VictimApplication.Core/Services/IApi.cs" Line="20" Column="74" />
       <File FileName="VictimApplication.iOS/Views/RegisterView.xib" NotebookId="1" />
-      <File FileName="VictimApplication.iOS/Views/LoginView.cs" Line="27" Column="17" NotebookId="1" />
-      <File FileName="VictimApplication.Core/ViewModels/LoginViewModel.cs" Line="59" Column="25" NotebookId="1" />
-      <File FileName="VictimApplication.Core/Models/UserForCreationDto.cs" Line="8" Column="18" NotebookId="1" />
-      <File FileName="VictimApplication.Core/ViewModels/InformationViewModel.cs" Line="18" Column="25" NotebookId="1" />
-      <File FileName="VictimApplication.Core/ViewModels/MessangerViewModel.cs" Line="17" Column="25" NotebookId="1" />
-      <File FileName="VictimApplication.Core/ViewModels/PoliceDetailsViewModel.cs" Line="18" Column="25" NotebookId="1" />
+      <File FileName="VictimApplication.iOS/Views/LoginView.cs" Line="21" Column="79" NotebookId="1" />
+      <File FileName="VictimApplication.Core/ViewModels/LoginViewModel.cs" Line="65" Column="17" NotebookId="1" />
+      <File FileName="VictimApplication.Core/App.cs" Line="30" Column="38" NotebookId="1" />
+      <File FileName="VictimApplication.Core/ViewModels/RegisterViewModel.cs" Line="81" Column="17" NotebookId="1" />
+      <File FileName="VictimApplication.Droid/Setup.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="VictimApplication.Droid/Resources/layout/RegisterView.axml" Line="13" Column="43" NotebookId="1" />
+      <File FileName="VictimApplication.Droid/LinkerPleaseInclude.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="VictimApplication.Droid/packages.config" Line="1" Column="1" NotebookId="1" />
+      <File FileName="VictimApplication.Droid/SplashScreen.cs" Line="22" Column="91" NotebookId="1" />
+      <File FileName="VictimApplication.Core/Repository.cs" Line="53" Column="59" NotebookId="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
