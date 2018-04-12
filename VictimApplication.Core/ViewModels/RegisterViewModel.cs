@@ -74,7 +74,8 @@ namespace VictimApplication.Core.ViewModels
                 UserName = Login,
                 Password = this.Password,
                 FirstName = this.Firstname,
-                SecondName = this.Surname
+                SecondName = this.Surname,
+                Email = this.Email
             };
             try
             {

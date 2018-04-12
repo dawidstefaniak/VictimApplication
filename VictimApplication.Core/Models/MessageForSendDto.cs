@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace VictimApplication.Core.Models
 {
-    public class MessageForSendDto
+    public class MessageForCreationDto
     {
         public string MessageText { get; set; }
+        public int CaseId { get; set; }
+        public int SenderUserId { get; set; }
+        public int ReceiverUserId { get; set; }
     }
 }

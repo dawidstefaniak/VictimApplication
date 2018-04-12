@@ -11,6 +11,7 @@ namespace VictimApplication.Core.ViewModels
         {
             get =>_information;
         }
+
         public IMvxCommand ShowMenuCommand => new MvxCommand(ShowMenu);
 
         private void ShowMenu()
