@@ -1,11 +1,10 @@
 ﻿using System.Threading.Tasks;
 using MvvmCross.Core.ViewModels;
-using MvvmCross.Platform;
 using VictimApplication.Core.Models;
 
 namespace VictimApplication.Core.ViewModels
 {
-    public class InformationViewModel : MvxViewModel
+    public class CasesViewModel : MvxViewModel
     {
         private LoggedUserDto user = new LoggedUserDto();
         private string _information;
@@ -18,8 +17,9 @@ namespace VictimApplication.Core.ViewModels
 
         public override async Task Initialize()
         {
+            var userek = typeof(LoggedUserDto).GetField("UserId");
             await base.Initialize();
-            Information = user.UserId.ToString();
+            Information = userek.GetValue(null).ToString();
             // do something with _initialParameter
         }
 

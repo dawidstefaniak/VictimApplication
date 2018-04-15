@@ -1,14 +1,20 @@
 ﻿<Properties StartupConfiguration="{B69E434E-C373-4F2E-BAE3-13D2B9E8F7B5}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="VictimApplication.Core/Models/MessageForSendDto.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="VictimApplication.Core/Services/IApi.cs">
     <Files>
-      <File FileName="VictimApplication.Core/ViewModels/InformationViewModel.cs" Line="19" Column="25" />
-      <File FileName="VictimApplication.Core/Models/MessageForSendDto.cs" Line="9" Column="28" />
+      <File FileName="VictimApplication.Core/Models/LoggedUserDto.cs" Line="5" Column="6" />
+      <File FileName="VictimApplication.Core/ViewModels/MainViewModel.cs" Line="14" Column="44" />
+      <File FileName="VictimApplication.iOS/Views/InformationView.cs" Line="20" Column="85" />
+      <File FileName="VictimApplication.Core/ViewModels/InformationViewModel.cs" Line="23" Column="60" />
+      <File FileName="VictimApplication.Core/ViewModels/LoginViewModel.cs" Line="63" Column="45" />
+      <File FileName="VictimApplication.Core/Services/IApi.cs" Line="20" Column="18" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.VictimApplication.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.ADDD7844-B6BE-4D2E-8716-F3018795C736" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/dawidstefaniak/Projects/VictimApplication/VictimApplication.Core/ViewModels/LoginViewModel.cs" relfile="VictimApplication.Core/ViewModels/LoginViewModel.cs" line="63" column="22" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
