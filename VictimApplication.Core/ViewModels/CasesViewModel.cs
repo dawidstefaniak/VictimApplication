@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using MvvmCross.Core.ViewModels;
 using VictimApplication.Core.Models;
@@ -11,6 +12,7 @@ namespace VictimApplication.Core.ViewModels
         private LoggedUserDto user = new LoggedUserDto();
         private readonly IApi _api;
         private string _information;
+        private IEnumerable<CaseDto> _listofcases;
 
         public CasesViewModel(IApi api)
         {
@@ -21,6 +23,12 @@ namespace VictimApplication.Core.ViewModels
         {
             get { return _information; }
             set { SetProperty(ref _information, value); }
+        }
+
+        public IEnumerable<CaseDto> Listofcases
+        {
+            get { return _listofcases; }
+            set { SetProperty(ref _listofcases, value); }
         }
 
         public override async Task Initialize()
@@ -37,12 +45,18 @@ namespace VictimApplication.Core.ViewModels
         public async Task GetCases()
         {
             //Data is userId parameter which will be send by API in get method
-            var data = new Dictionary<string, object>
+            try
             {
-                {"userId", user.UserId.ToString()}
-            };
-            var list = await _api.GetListOfCasesForUser(data);
-
+                var data = new Dictionary<string, object>
+                {
+                    {"userId", user.UserId.ToString()}
+                };
+                Listofcases = await _api.GetListOfCasesForUser(user.UserId);
+            }
+            catch(Exception ex)
+            {
+                _information = ex.Message;
+            }
         }
 
         private void ShowMenu()

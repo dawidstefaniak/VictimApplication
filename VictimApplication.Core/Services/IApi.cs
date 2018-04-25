@@ -18,8 +18,8 @@ namespace VictimApplication.Core.Services
         [Post("/api/user/login")]
         Task<LoggedUserDto> Login([Body(BodySerializationMethod.Json)] UserToLoginDto user);
 
-        [Get("/api/case/getListOfCasesForUser")]
-        //Task<LoggedUserDto> GetListOfCasesForUser([Body(BodySerializationMethod.Json)] UserToLoginDto user);
-        Task<List<CaseDto>> GetListOfCasesForUser([Body(BodySerializationMethod.UrlEncoded)] Dictionary<string, object> data);
+        [Get("/api/case/getlistofcasesforuser/{userId}")]
+        //Task<IEnumerable<CaseDto>> GetListOfCasesForUser([Body(BodySerializationMethod.UrlEncoded)] Dictionary<string, object> data);
+        Task<IEnumerable<CaseDto>> GetListOfCasesForUser([AliasAs("userId")]int userId);
     }
 }

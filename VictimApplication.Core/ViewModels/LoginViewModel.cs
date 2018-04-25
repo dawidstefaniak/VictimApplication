@@ -58,7 +58,6 @@ namespace VictimApplication.Core.ViewModels
                     _userDialogs.Alert("Logged as Police");
                 else if (loggedUser.UserType == "U")
                     _userDialogs.Alert("Logged as User");
-                ShowViewModel<MenuViewModel>();
             }
             catch (Exception ex)
             {
