@@ -13,7 +13,7 @@ namespace VictimApplication.Core.ViewModels
         private readonly IApi _api;
         private string _information;
         private IEnumerable<CaseDto> _listofcases;
-
+        private MvxObservableCollection<CaseDto> _casesobservable = new MvxObservableCollection<CaseDto>();
         public CasesViewModel(IApi api)
         {
             _api = api;
@@ -23,6 +23,12 @@ namespace VictimApplication.Core.ViewModels
         {
             get { return _information; }
             set { SetProperty(ref _information, value); }
+        }
+
+        public MvxObservableCollection<CaseDto> casesobservable 
+        {
+            get { return _casesobservable; }
+            set { SetProperty(ref _casesobservable, value); }
         }
 
         public IEnumerable<CaseDto> Listofcases
@@ -52,6 +58,11 @@ namespace VictimApplication.Core.ViewModels
                     {"userId", user.UserId.ToString()}
                 };
                 Listofcases = await _api.GetListOfCasesForUser(user.UserId);
+
+                foreach (var cases in Listofcases)
+                {
+                    casesobservable.Add(cases);
+                }
             }
             catch(Exception ex)
             {

@@ -177,6 +177,7 @@
     <InterfaceDefinition Include="Views\RegisterView.xib" />
     <InterfaceDefinition Include="Views\CasesView.xib" />
     <InterfaceDefinition Include="Views\CaseView.xib" />
+    <InterfaceDefinition Include="Views\CaseCell.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -221,6 +222,10 @@
     <Compile Include="Views\CasesView.designer.cs" />
     <Compile Include="Views\CaseView.cs" />
     <Compile Include="Views\CaseView.designer.cs" />
+    <Compile Include="Views\CaseCell.cs" />
+    <Compile Include="Views\CaseCell.designer.cs">
+      <DependentUpon>CaseCell.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Northumbria Police Logo.PNG" />

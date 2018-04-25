@@ -7,22 +7,21 @@
 using Foundation;
 using System;
 using System.CodeDom.Compiler;
-using UIKit;
 
 namespace VictimApplication.iOS.Views
 {
-    [Register ("CasesView")]
-    partial class CasesView
+    [Register ("CaseCell")]
+    partial class CaseCell
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UITableView VCTableView { get; set; }
+        UIKit.UILabel VCCaseName { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
-            if (VCTableView != null) {
-                VCTableView.Dispose ();
-                VCTableView = null;
+            if (VCCaseName != null) {
+                VCCaseName.Dispose ();
+                VCCaseName = null;
             }
         }
     }
