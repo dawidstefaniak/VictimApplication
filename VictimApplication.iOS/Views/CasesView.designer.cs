@@ -7,11 +7,12 @@
 using Foundation;
 using System;
 using System.CodeDom.Compiler;
+using UIKit;
 
-namespace VictimApplication.iOS
+namespace VictimApplication.iOS.Views
 {
-    [Register ("ViewController")]
-    partial class ViewController
+    [Register ("CasesView")]
+    partial class CasesView
     {
         void ReleaseDesignerOutlets ()
         {

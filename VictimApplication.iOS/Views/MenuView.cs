@@ -21,6 +21,7 @@ namespace VictimApplication.iOS.Views
             this.CreateBinding(VCPoliceDetails).To((MenuViewModel vm) => vm.ShowPoliceDetailsCommand).Apply();
             this.CreateBinding(VCMessanger).To((MenuViewModel vm) => vm.ShowMessangerCommand).Apply();
             this.CreateBinding(VCInformation).To((MenuViewModel vm) => vm.ShowInformationCommand).Apply();
+            this.CreateBinding(VCCases).To((MenuViewModel vm) => vm.ShowCasesCommand).Apply();
 
         }
 

@@ -31,6 +31,11 @@ namespace VictimApplication.Core.ViewModels
         {
             ShowViewModel<LoginViewModel>();
         }
+        public IMvxCommand ShowCasesCommand => new MvxCommand(ShowCasesLogin);
 
+        private void ShowCasesLogin()
+        {
+            ShowViewModel<CasesViewModel>();
+        }
     }
 }

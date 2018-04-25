@@ -1,14 +1,15 @@
 ﻿using System;
-
+using MvvmCross.Binding.BindingContext;
+using MvvmCross.iOS.Views;
 using UIKit;
+using VictimApplication.Core.ViewModels;
 
-namespace VictimApplication.iOS
+namespace VictimApplication.iOS.Views
 {
-    public partial class ViewController : UIViewController
+    public partial class CasesView : MvxViewController<CasesViewModel>
     {
-        protected ViewController(IntPtr handle) : base(handle)
+        public CasesView() : base("CasesView", null)
         {
-            // Note: this .ctor should not contain any initialization logic.
         }
 
         public override void ViewDidLoad()
@@ -24,3 +25,4 @@ namespace VictimApplication.iOS
         }
     }
 }
+

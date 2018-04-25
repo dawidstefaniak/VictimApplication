@@ -7,6 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VictimApplication.Core", "V
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VictimApplication.Droid", "VictimApplication.Droid\VictimApplication.Droid.csproj", "{480C6E0A-6D18-473A-AFB2-AF8C7183DEA6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E1362BE2-944B-42D9-9896-ADE22872E80C}"
+	ProjectSection(SolutionItems) = preProject
+		VictimApplication.sln = VictimApplication.sln
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

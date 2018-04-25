@@ -175,6 +175,8 @@
     <InterfaceDefinition Include="Views\MessangerView.xib" />
     <InterfaceDefinition Include="Views\PoliceDetailsView.xib" />
     <InterfaceDefinition Include="Views\RegisterView.xib" />
+    <InterfaceDefinition Include="Views\CasesView.xib" />
+    <InterfaceDefinition Include="Views\CaseView.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -185,10 +187,6 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="ViewController.cs" />
-    <Compile Include="ViewController.designer.cs">
-      <DependentUpon>ViewController.cs</DependentUpon>
-    </Compile>
     <Compile Include="Views\MainView.designer.cs" />
     <Compile Include="Setup.cs" />
     <Compile Include="Views\InformationView.cs" />
@@ -219,6 +217,10 @@
       <DependentUpon>RegisterView.cs</DependentUpon>
     </Compile>
     <Compile Include="Bootstrap\JsonPluginBootstrap.cs" />
+    <Compile Include="Views\CasesView.cs" />
+    <Compile Include="Views\CasesView.designer.cs" />
+    <Compile Include="Views\CaseView.cs" />
+    <Compile Include="Views\CaseView.designer.cs" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Northumbria Police Logo.PNG" />

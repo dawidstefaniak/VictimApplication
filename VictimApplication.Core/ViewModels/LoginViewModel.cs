@@ -21,14 +21,6 @@ namespace VictimApplication.Core.ViewModels
             _userDialogs = userDialogs;
         }
 
-        public void Init(User user = null)
-        {
-            _user = user == null ? new User() : user;
-            RaiseAllPropertiesChanged();
-        }
-
-        User _user;
-
         private string _login = "";
 
         public string Login
@@ -60,12 +52,17 @@ namespace VictimApplication.Core.ViewModels
             };
             try
             {
-                var stringer = await _api.Login(user);
+                LoggedUserDto loggedUser = await _api.Login(user);
+                ShowViewModel<MenuViewModel>();
+                if (loggedUser.UserType == "P")
+                    _userDialogs.Alert("Logged as Police");
+                else if (loggedUser.UserType == "U")
+                    _userDialogs.Alert("Logged as User");
                 ShowViewModel<MenuViewModel>();
             }
             catch (Exception ex)
             {
-                _userDialogs.Alert($"Wrong Username or Password, {ex.Message}");
+                _userDialogs.Alert(ex.Message);
             }
 
         }
