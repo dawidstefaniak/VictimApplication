@@ -22,6 +22,7 @@ namespace VictimApplication.iOS.Views
 
             var set = this.CreateBindingSet<CasesView, CasesViewModel>();
             set.Bind(source).To(v => v.casesobservable);
+            set.Bind(source).For(s => s.SelectionChangedCommand).To(s => s.DisplayMessagesCommand);
             set.Apply();
 
             VCTableView.Source = source;

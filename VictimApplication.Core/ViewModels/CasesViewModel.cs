@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using MvvmCross.Core.Navigation;
 using MvvmCross.Core.ViewModels;
 using VictimApplication.Core.Models;
 using VictimApplication.Core.Services;
@@ -13,10 +14,12 @@ namespace VictimApplication.Core.ViewModels
         private readonly IApi _api;
         private string _information;
         private IEnumerable<CaseDto> _listofcases;
+//        private readonly IMvxNavigationService _navigationService;
         private MvxObservableCollection<CaseDto> _casesobservable = new MvxObservableCollection<CaseDto>();
-        public CasesViewModel(IApi api)
+        public CasesViewModel(IApi api, IMvxNavigationService NavigationService)
         {
             _api = api;
+//            _navigationService = NavigationService;
         }
 
         public string Information
@@ -47,16 +50,14 @@ namespace VictimApplication.Core.ViewModels
 
         public IMvxCommand ShowMenuCommand => new MvxCommand(ShowMenu);
         public IMvxCommand LoadCasesCommand => new MvxAsyncCommand(GetCases);
+        public IMvxCommand DisplayMessagesCommand => new MvxCommand<CaseDto>((currentcase) => ShowViewModel<MessangerViewModel>(new {caseId = currentcase.CaseId}));
+
 
         public async Task GetCases()
         {
             //Data is userId parameter which will be send by API in get method
             try
             {
-                var data = new Dictionary<string, object>
-                {
-                    {"userId", user.UserId.ToString()}
-                };
                 Listofcases = await _api.GetListOfCasesForUser(user.UserId);
 
                 foreach (var cases in Listofcases)

@@ -29,7 +29,7 @@ namespace VictimApplication.Core.ViewModels
 
         private void ShowLogin()
         {
-            ShowViewModel<LoginViewModel>();
+            Close(this);
         }
         public IMvxCommand ShowCasesCommand => new MvxCommand(ShowCasesLogin);
 
