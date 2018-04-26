@@ -18,7 +18,7 @@ namespace VictimApplication.iOS.Views
             base.ViewDidLoad();
             // Perform any additional setup after loading the view, typically from a nib.
             var source = new MvxSimpleTableViewSource(VCTableView, "CaseCell", CaseCell.Key);
-            VCTableView.RowHeight = 44;
+            VCTableView.RowHeight = 142;
 
             var set = this.CreateBindingSet<CasesView, CasesViewModel>();
             set.Bind(source).To(v => v.casesobservable);
