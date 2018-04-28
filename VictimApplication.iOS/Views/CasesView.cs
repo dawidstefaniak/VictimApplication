@@ -21,7 +21,7 @@ namespace VictimApplication.iOS.Views
             VCTableView.RowHeight = 142;
 
             var set = this.CreateBindingSet<CasesView, CasesViewModel>();
-            set.Bind(source).To(v => v.casesobservable);
+            set.Bind(source).To(v => v.CasesObservable);
             set.Bind(source).For(s => s.SelectionChangedCommand).To(s => s.DisplayMessagesCommand);
             set.Apply();
 

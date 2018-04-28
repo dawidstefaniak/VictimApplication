@@ -1,5 +1,6 @@
 ﻿using System;
 using MvvmCross.Binding.BindingContext;
+using MvvmCross.Binding.iOS.Views;
 using MvvmCross.iOS.Views;
 using UIKit;
 using VictimApplication.Core.ViewModels;
@@ -17,8 +18,16 @@ namespace VictimApplication.iOS.Views
             base.ViewDidLoad();
             // Perform any additional setup after loading the view, typically from a nib.
 
-            this.CreateBinding(VCMessage).To((MessangerViewModel vm) => vm.Messanger).Apply();
-            this.CreateBinding(VCBack).To((MessangerViewModel vm) => vm.ShowMenuCommand).Apply();
+            var source = new MvxSimpleTableViewSource(VCMessages, "MessagesCell", MessagesCell.Key);
+            VCMessages.RowHeight = 65;
+
+            var set = this.CreateBindingSet<MessangerView, MessangerViewModel>();
+            set.Bind(source).To(v => v.MessagesObservable);
+            //set.Bind(source).For(s => s.SelectionChangedCommand).To(s => s.DisplayMessagesCommand);
+            set.Apply();
+
+            VCMessages.Source = source;
+            VCMessages.ReloadData();
         }
 
         public override void DidReceiveMemoryWarning()

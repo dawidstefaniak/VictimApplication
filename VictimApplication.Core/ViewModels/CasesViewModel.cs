@@ -13,8 +13,8 @@ namespace VictimApplication.Core.ViewModels
         private LoggedUserDto user = new LoggedUserDto();
         private readonly IApi _api;
         private string _information;
-        private IEnumerable<CaseDto> _listofcases;
-        private MvxObservableCollection<CaseDto> _casesobservable = new MvxObservableCollection<CaseDto>();
+        private IEnumerable<CaseDto> listofcases;
+        private MvxObservableCollection<CaseDto> casesobservable = new MvxObservableCollection<CaseDto>();
 
         public CasesViewModel(IApi api)
         {
@@ -27,16 +27,16 @@ namespace VictimApplication.Core.ViewModels
             set { SetProperty(ref _information, value); }
         }
 
-        public MvxObservableCollection<CaseDto> casesobservable 
+        public MvxObservableCollection<CaseDto> CasesObservable 
         {
-            get { return _casesobservable; }
-            set { SetProperty(ref _casesobservable, value); }
+            get { return casesobservable; }
+            set { SetProperty(ref casesobservable, value); }
         }
 
         public IEnumerable<CaseDto> Listofcases
         {
-            get { return _listofcases; }
-            set { SetProperty(ref _listofcases, value); }
+            get { return listofcases; }
+            set { SetProperty(ref listofcases, value); }
         }
 
         public override async Task Initialize()
@@ -61,7 +61,7 @@ namespace VictimApplication.Core.ViewModels
 
                 foreach (var cases in Listofcases)
                 {
-                    casesobservable.Add(cases);
+                    CasesObservable.Add(cases);
                 }
             }
             catch(Exception ex)

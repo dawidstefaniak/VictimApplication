@@ -7,22 +7,21 @@
 using Foundation;
 using System;
 using System.CodeDom.Compiler;
-using UIKit;
 
 namespace VictimApplication.iOS.Views
 {
-    [Register ("MessangerView")]
-    partial class MessangerView
+    [Register ("MessagesCell")]
+    partial class MessagesCell
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UITableView VCMessages { get; set; }
+        UIKit.UILabel VCMessage { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
-            if (VCMessages != null) {
-                VCMessages.Dispose ();
-                VCMessages = null;
+            if (VCMessage != null) {
+                VCMessage.Dispose ();
+                VCMessage = null;
             }
         }
     }

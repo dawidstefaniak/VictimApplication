@@ -21,5 +21,11 @@ namespace VictimApplication.Core.Services
         [Get("/api/case/getlistofcasesforuser/{userId}")]
         //Task<IEnumerable<CaseDto>> GetListOfCasesForUser([Body(BodySerializationMethod.UrlEncoded)] Dictionary<string, object> data);
         Task<IEnumerable<CaseDto>> GetListOfCasesForUser([AliasAs("userId")]int userId);
+
+        [Post("/api/message/getmessages/{userId}")]
+        Task<IEnumerable<MessageDto>> GetListOfMessagesForUser([AliasAs("userId")]int userId);
+
+        [Get("/api/message/getMessagesForCase/{caseId}")]
+        Task<IEnumerable<MessageDto>> GetListOfMessagesForCase([AliasAs("caseId")]int caseId);
     }
 }
