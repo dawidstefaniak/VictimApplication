@@ -14,12 +14,11 @@ namespace VictimApplication.Core.ViewModels
         private readonly IApi _api;
         private string _information;
         private IEnumerable<CaseDto> _listofcases;
-//        private readonly IMvxNavigationService _navigationService;
         private MvxObservableCollection<CaseDto> _casesobservable = new MvxObservableCollection<CaseDto>();
-        public CasesViewModel(IApi api, IMvxNavigationService NavigationService)
+
+        public CasesViewModel(IApi api)
         {
             _api = api;
-//            _navigationService = NavigationService;
         }
 
         public string Information
@@ -50,7 +49,7 @@ namespace VictimApplication.Core.ViewModels
 
         public IMvxCommand ShowMenuCommand => new MvxCommand(ShowMenu);
         public IMvxCommand LoadCasesCommand => new MvxAsyncCommand(GetCases);
-        public IMvxCommand DisplayMessagesCommand => new MvxCommand<CaseDto>((currentcase) => ShowViewModel<MessangerViewModel>(new {caseId = currentcase.CaseId}));
+        public IMvxCommand DisplayMessagesCommand => new MvxCommand<CaseDto>((currentcase) => ShowViewModel<MessangerViewModel>(currentcase));
 
 
         public async Task GetCases()
