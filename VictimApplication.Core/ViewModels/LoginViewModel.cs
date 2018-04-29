@@ -50,6 +50,7 @@ namespace VictimApplication.Core.ViewModels
                 UserName = Login,
                 Password = this.Password
             };
+
             try
             {
                 LoggedUserDto loggedUser = await _api.Login(user);

@@ -27,5 +27,8 @@ namespace VictimApplication.Core.Services
 
         [Get("/api/message/getMessagesForCase/{caseId}")]
         Task<IEnumerable<MessageDto>> GetListOfMessagesForCase([AliasAs("caseId")]int caseId);
+
+        [Post("/api/message/sendmessage")]
+        Task SendMessage([Body(BodySerializationMethod.Json)] MessageForCreationDto message);
     }
 }

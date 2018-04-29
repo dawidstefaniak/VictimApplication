@@ -179,6 +179,7 @@
     <InterfaceDefinition Include="Views\CaseView.xib" />
     <InterfaceDefinition Include="Views\CaseCell.xib" />
     <InterfaceDefinition Include="Views\MessagesCell.xib" />
+    <InterfaceDefinition Include="Views\MessageView.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -230,6 +231,10 @@
     <Compile Include="Views\MessagesCell.cs" />
     <Compile Include="Views\MessagesCell.designer.cs">
       <DependentUpon>MessagesCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MessageView.cs" />
+    <Compile Include="Views\MessageView.designer.cs">
+      <DependentUpon>MessageView.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

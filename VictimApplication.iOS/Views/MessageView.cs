@@ -7,9 +7,9 @@ using VictimApplication.Core.ViewModels;
 
 namespace VictimApplication.iOS.Views
 {
-    public partial class MessangerView : MvxViewController<MessangerViewModel>
+    public partial class MessageView : MvxViewController<MessageViewModel>
     {
-        public MessangerView() : base("MessangerView", null)
+        public MessageView() : base("MessageView", null)
         {
         }
 
@@ -17,17 +17,9 @@ namespace VictimApplication.iOS.Views
         {
             base.ViewDidLoad();
             // Perform any additional setup after loading the view, typically from a nib.
+            this.CreateBinding(VCSenderId).To((MessageViewModel vm) => vm.CurrentMessage.SenderUserId).Apply();
+            this.CreateBinding(VCMessageText).To((MessageViewModel vm) => vm.CurrentMessage.MessageText).Apply();
 
-            var source = new MvxSimpleTableViewSource(VCMessages, "MessagesCell", MessagesCell.Key);
-            VCMessages.RowHeight = 65;
-
-            var set = this.CreateBindingSet<MessangerView, MessangerViewModel>();
-            set.Bind(source).To(v => v.MessagesObservable);
-            set.Bind(source).For(s => s.SelectionChangedCommand).To(s => s.DisplayMessageCommand);
-            set.Apply();
-
-            VCMessages.Source = source;
-            VCMessages.ReloadData();
         }
 
         public override void DidReceiveMemoryWarning()

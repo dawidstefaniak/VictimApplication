@@ -15,7 +15,6 @@ namespace VictimApplication.Core.ViewModels
         private IEnumerable<MessageDto> messagesList;
         private MvxObservableCollection<MessageDto> messagesObservable = new MvxObservableCollection<MessageDto>();
 
-        private int caseid;
         public string Message 
         {
             get => message;
@@ -41,6 +40,7 @@ namespace VictimApplication.Core.ViewModels
 
         public IMvxCommand ShowMenuCommand => new MvxCommand(ShowMenu);
         public IMvxCommand GetMessagesCommand => new MvxAsyncCommand(GetMessages);
+        public IMvxCommand DisplayMessageCommand => new MvxCommand<MessageDto>((currentmessage) => ShowViewModel<MessageViewModel>(currentmessage));
 
         public override void Prepare(CaseDto parameter)
         {

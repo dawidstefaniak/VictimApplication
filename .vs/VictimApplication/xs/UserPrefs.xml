@@ -1,22 +1,24 @@
 ﻿<Properties StartupConfiguration="{B69E434E-C373-4F2E-BAE3-13D2B9E8F7B5}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="VictimApplication.Core/ViewModels/MessangerViewModel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="VictimApplication.Core/ViewModels/CasesViewModel.cs">
     <Files>
-      <File FileName="VictimApplication.Core/ViewModels/MessangerViewModel.cs" Line="48" Column="1" />
-      <File FileName="VictimApplication.Core/Services/IApi.cs" Line="32" Column="1" />
-      <File FileName="VictimApplication.iOS/Views/MessagesCell.cs" Line="25" Column="68" />
-      <File FileName="VictimApplication.iOS/Views/MessangerView.cs" Line="24" Column="82" />
+      <File FileName="VictimApplication.Core/Services/IApi.cs" Line="31" Column="43" />
       <File FileName="VictimApplication.iOS/Main.cs" Line="12" Column="1" />
+      <File FileName="VictimApplication.Core/ViewModels/MessageViewModel.cs" Line="39" Column="47" />
+      <File FileName="VictimApplication.iOS/Views/MessageView.cs" Line="21" Column="114" />
+      <File FileName="VictimApplication.iOS/Views/MessageView.xib" />
+      <File FileName="VictimApplication.iOS/Views/MessagesCell.cs" Line="1" Column="1" />
+      <File FileName="VictimApplication.Core/ViewModels/CasesViewModel.cs" Line="1" Column="1" />
       <File FileName="VictimApplication.iOS/Views/CasesView.cs" Line="23" Column="59" NotebookId="1" />
-      <File FileName="VictimApplication.Core/ViewModels/CasesViewModel.cs" Line="53" Column="9" NotebookId="1" />
+      <File FileName="VictimApplication.Core/ViewModels/MessangerViewModel.cs" Line="41" Column="57" NotebookId="1" />
+      <File FileName="VictimApplication.Core/ViewModels/LoginViewModel.cs" Line="60" Column="53" NotebookId="1" />
+      <File FileName="VictimApplication.iOS/Views/MessangerView.cs" Line="26" Column="90" NotebookId="1" />
+      <File FileName="VictimApplication.iOS/Views/PoliceDetailsView.cs" Line="1" Column="1" NotebookId="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.VictimApplication.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.ADDD7844-B6BE-4D2E-8716-F3018795C736" />
+  <MonoDevelop.Ide.ItemProperties.VictimApplication.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.68B7F852-536E-4B21-8887-E96539025A81" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/dawidstefaniak/Projects/VictimApplication/VictimApplication.Core/ViewModels/MessangerViewModel.cs" relfile="VictimApplication.Core/ViewModels/MessangerViewModel.cs" line="48" column="1" />
-      <Breakpoint file="/Users/dawidstefaniak/Projects/VictimApplication/VictimApplication.Core/ViewModels/MessangerViewModel.cs" relfile="VictimApplication.Core/ViewModels/MessangerViewModel.cs" line="53" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches>
     <Watch file="../../../VictimApplication.Core/ViewModels/LoginViewModel.cs" line="63" offsetX="457" offsetY="932" expression="stringer" liveUpdate="True" />
