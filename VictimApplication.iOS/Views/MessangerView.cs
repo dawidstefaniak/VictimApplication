@@ -17,7 +17,6 @@ namespace VictimApplication.iOS.Views
         {
             base.ViewDidLoad();
             // Perform any additional setup after loading the view, typically from a nib.
-
             var source = new MvxSimpleTableViewSource(VCMessages, "MessagesCell", MessagesCell.Key);
             VCMessages.RowHeight = 65;
 
@@ -30,10 +29,10 @@ namespace VictimApplication.iOS.Views
             VCMessages.ReloadData();
 
             this.CreateBinding(VCSend).To((MessangerViewModel vm) => vm.SendMessageCommand).Apply();
-
-            View.AddGestureRecognizer(new UITapGestureRecognizer(() => {
-                this.VCText.ResignFirstResponder();
-            }));
+            this.CreateBinding(VCText).To((MessangerViewModel vm) => vm.Message).Apply();
+            //View.AddGestureRecognizer(new UITapGestureRecognizer(() => {
+            //    this.VCText.ResignFirstResponder();
+            //}));
         }
 
         public override void DidReceiveMemoryWarning()

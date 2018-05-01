@@ -28,6 +28,7 @@
             <connections>
                 <outlet property="VCMessage" destination="180" id="name-outlet-180"/>
             </connections>
+            <point key="canvasLocation" x="-1" y="6"/>
         </tableViewCell>
     </objects>
     <resources>

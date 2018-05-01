@@ -12,8 +12,11 @@ namespace VictimApplication.Core.ViewModels
         private string message;
         private readonly IApi _api;
         private CaseDto currentCase;
-        private User currentuser = new User();
+        private LoggedUserDto currentuser = new LoggedUserDto();
         private IEnumerable<MessageDto> messagesList;
+
+        //Messagetosend is only private
+        private MessageForCreationDto messagetosend;
         private MvxObservableCollection<MessageDto> messagesObservable = new MvxObservableCollection<MessageDto>();
 
         public string Message 
@@ -51,8 +54,8 @@ namespace VictimApplication.Core.ViewModels
 
         public override async Task Initialize()
         {
-            await base.Initialize();
             await GetMessages();
+            await base.Initialize();
         }
 
         public void Init(CaseDto parameter)
@@ -62,6 +65,7 @@ namespace VictimApplication.Core.ViewModels
 
         public async Task GetMessages()
         {
+            MessagesObservable.Clear();
             try
             {
                 //
@@ -77,12 +81,11 @@ namespace VictimApplication.Core.ViewModels
             }
         }
 
-        //TODO change it for the email in database to get receiver email instead of ID
         public async Task SendMessage()
         {
-            MessageForCreationDto messagetosend;
+            
 
-            if (currentuser.Id == currentCase.OfficerId)
+            if (currentuser.UserId == currentCase.OfficerId)
             {
                 messagetosend = new MessageForCreationDto
                 {
@@ -103,6 +106,8 @@ namespace VictimApplication.Core.ViewModels
             try
             {
                 await _api.SendMessage(messagetosend);
+                await RefreshForm();
+
             }
             catch
             {
@@ -113,6 +118,12 @@ namespace VictimApplication.Core.ViewModels
 		private void ShowMenu()
         {
             Close(this);
+        }
+        private async Task RefreshForm()
+        {
+            Message = null;
+            await GetMessages();
+
         }
 
 

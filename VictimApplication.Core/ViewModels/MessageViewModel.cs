@@ -33,7 +33,7 @@ namespace VictimApplication.Core.ViewModels
 
         public override void Prepare(MessageDto parameter)
         {
-            throw new NotImplementedException();
+            
         }
 
         public void Init(MessageDto parameter)

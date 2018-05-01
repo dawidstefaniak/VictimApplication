@@ -17,7 +17,7 @@ namespace VictimApplication.iOS.Views
         {
             base.ViewDidLoad();
             // Perform any additional setup after loading the view, typically from a nib.
-            this.CreateBinding(VCSenderId).To((MessageViewModel vm) => vm.CurrentMessage.SenderUserId).Apply();
+            this.CreateBinding(VCSenderId).To((MessageViewModel vm) => vm.CurrentMessage.IsPoliceSender).Apply();
             this.CreateBinding(VCMessageText).To((MessageViewModel vm) => vm.CurrentMessage.MessageText).Apply();
 
         }
