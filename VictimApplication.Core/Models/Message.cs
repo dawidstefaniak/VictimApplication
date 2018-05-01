@@ -12,17 +12,12 @@ namespace VictimApplication.Core.Models
         [MaxLength(250)]
         public string MessageText { get; set; }
 
-        [NotNull]
-        public int SenderId { get; set; }
-
-        [NotNull]
-        public int ReceiverId { get; set; }
+        public bool IsPoliceSender { get; set; }
 
         public Message()
         {
-            ReceiverId = 0;
-            SenderId = 0;
             MessageText = "";
         }
+
     }
 }

@@ -28,6 +28,12 @@ namespace VictimApplication.iOS.Views
 
             VCMessages.Source = source;
             VCMessages.ReloadData();
+
+            this.CreateBinding(VCSend).To((MessangerViewModel vm) => vm.SendMessageCommand).Apply();
+
+            View.AddGestureRecognizer(new UITapGestureRecognizer(() => {
+                this.VCText.ResignFirstResponder();
+            }));
         }
 
         public override void DidReceiveMemoryWarning()

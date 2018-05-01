@@ -1,22 +1,14 @@
 ﻿<Properties StartupConfiguration="{B69E434E-C373-4F2E-BAE3-13D2B9E8F7B5}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="VictimApplication.Core/ViewModels/CasesViewModel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="VictimApplication.iOS/Views/MessangerView.cs">
     <Files>
-      <File FileName="VictimApplication.Core/Services/IApi.cs" Line="31" Column="43" />
-      <File FileName="VictimApplication.iOS/Main.cs" Line="12" Column="1" />
-      <File FileName="VictimApplication.Core/ViewModels/MessageViewModel.cs" Line="39" Column="47" />
-      <File FileName="VictimApplication.iOS/Views/MessageView.cs" Line="21" Column="114" />
-      <File FileName="VictimApplication.iOS/Views/MessageView.xib" />
-      <File FileName="VictimApplication.iOS/Views/MessagesCell.cs" Line="1" Column="1" />
-      <File FileName="VictimApplication.Core/ViewModels/CasesViewModel.cs" Line="1" Column="1" />
-      <File FileName="VictimApplication.iOS/Views/CasesView.cs" Line="23" Column="59" NotebookId="1" />
-      <File FileName="VictimApplication.Core/ViewModels/MessangerViewModel.cs" Line="41" Column="57" NotebookId="1" />
-      <File FileName="VictimApplication.Core/ViewModels/LoginViewModel.cs" Line="60" Column="53" NotebookId="1" />
-      <File FileName="VictimApplication.iOS/Views/MessangerView.cs" Line="26" Column="90" NotebookId="1" />
-      <File FileName="VictimApplication.iOS/Views/PoliceDetailsView.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="VictimApplication.Core/ViewModels/MessangerViewModel.cs" Line="45" Column="42" />
+      <File FileName="VictimApplication.Core/Models/Message.cs" Line="13" Column="48" />
+      <File FileName="VictimApplication.iOS/Views/MessangerView.cs" Line="32" Column="32" />
+      <File FileName="VictimApplication.iOS/Views/MenuView.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.VictimApplication.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.68B7F852-536E-4B21-8887-E96539025A81" />
+  <MonoDevelop.Ide.ItemProperties.VictimApplication.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.1A1CEA81-361C-4C64-BC0C-F1EDA3AA3940" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

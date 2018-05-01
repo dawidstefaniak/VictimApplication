@@ -12,6 +12,7 @@ namespace VictimApplication.Core.ViewModels
         private string message;
         private readonly IApi _api;
         private CaseDto currentCase;
+        private User currentuser = new User();
         private IEnumerable<MessageDto> messagesList;
         private MvxObservableCollection<MessageDto> messagesObservable = new MvxObservableCollection<MessageDto>();
 
@@ -41,6 +42,7 @@ namespace VictimApplication.Core.ViewModels
         public IMvxCommand ShowMenuCommand => new MvxCommand(ShowMenu);
         public IMvxCommand GetMessagesCommand => new MvxAsyncCommand(GetMessages);
         public IMvxCommand DisplayMessageCommand => new MvxCommand<MessageDto>((currentmessage) => ShowViewModel<MessageViewModel>(currentmessage));
+        public IMvxCommand SendMessageCommand => new MvxAsyncCommand(SendMessage);
 
         public override void Prepare(CaseDto parameter)
         {
@@ -72,6 +74,39 @@ namespace VictimApplication.Core.ViewModels
             catch(Exception ex)
             {
                 //TODO
+            }
+        }
+
+        //TODO change it for the email in database to get receiver email instead of ID
+        public async Task SendMessage()
+        {
+            MessageForCreationDto messagetosend;
+
+            if (currentuser.Id == currentCase.OfficerId)
+            {
+                messagetosend = new MessageForCreationDto
+                {
+                    MessageText = Message,
+                    CaseId = currentCase.CaseId,
+                    IsPoliceSender = true
+                };
+            }
+            else
+            {
+                messagetosend = new MessageForCreationDto
+                {
+                    MessageText = Message,
+                    CaseId = currentCase.CaseId,
+                    IsPoliceSender = false
+                };
+            }
+            try
+            {
+                await _api.SendMessage(messagetosend);
+            }
+            catch
+            {
+                
             }
         }
 

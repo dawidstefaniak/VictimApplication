@@ -10,7 +10,6 @@ namespace VictimApplication.Core.Models
     {
         public string MessageText { get; set; }
         public int CaseId {get;set;}
-        public int SenderUserId { get; set; }
-        public int ReceiverUserId { get; set; }
+        public bool IsPoliceSender { get; set; }
     }
 }
