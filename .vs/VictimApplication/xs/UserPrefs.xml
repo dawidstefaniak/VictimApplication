@@ -1,11 +1,10 @@
 ﻿<Properties StartupConfiguration="{B69E434E-C373-4F2E-BAE3-13D2B9E8F7B5}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="VictimApplication.iOS/Views/InformationView.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="VictimApplication.iOS/Views/CasesView.xib">
     <Files>
-      <File FileName="VictimApplication.Core/ViewModels/CasesViewModel.cs" Line="23" Column="31" />
-      <File FileName="VictimApplication.Core/ViewModels/EditCaseViewModel.cs" Line="140" Column="55" />
-      <File FileName="VictimApplication.Core/ViewModels/MessangerViewModel.cs" Line="55" Column="9" />
-      <File FileName="VictimApplication.iOS/Views/EditCaseView.cs" Line="7" Column="57" />
-      <File FileName="VictimApplication.iOS/Views/InformationView.cs" Line="1" Column="1" />
+      <File FileName="VictimApplication.iOS/Views/CasesForModifyingView.xib" />
+      <File FileName="VictimApplication.iOS/Views/CasesForModifyingView.cs" Line="29" Column="38" />
+      <File FileName="VictimApplication.iOS/Views/EditCaseView.xib" />
+      <File FileName="VictimApplication.iOS/Views/CasesView.xib" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

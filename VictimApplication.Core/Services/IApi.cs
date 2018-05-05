@@ -30,5 +30,7 @@ namespace VictimApplication.Core.Services
 
         [Put("/api/case/updatecase")]
         Task UpdateCase([Body(BodySerializationMethod.Json)] CaseDto casetoget);
+        [Get("/api/case/getcasebyid/{caseId}")]
+        Task<CaseDto> GetCaseById([AliasAs("caseId")] int caseId);
     }
 }

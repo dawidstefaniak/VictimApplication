@@ -1,18 +1,130 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703" />
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditCaseView">
             <connections>
-                <outlet property="view" destination="2" id="RRd-Eg-VrN" />
+                <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
+                <outlet property="VCCaseId" destination="182" id="name-outlet-182"/>
+                <outlet property="VCRefNumber" destination="183" id="name-outlet-183"/>
+                <outlet property="VCFirstName" destination="184" id="name-outlet-184"/>
+                <outlet property="VCSecondName" destination="185" id="name-outlet-185"/>
+                <outlet property="VCCaseStatus" destination="186" id="name-outlet-186"/>
+                <outlet property="VCReportDate" destination="188" id="name-outlet-188"/>
+                <outlet property="VCAddress" destination="190" id="name-outlet-190"/>
+                <outlet property="VCPhoneNumber" destination="191" id="name-outlet-191"/>
+                <outlet property="VCEmail" destination="192" id="name-outlet-192"/>
+                <outlet property="VCOfficerId" destination="193" id="name-outlet-193"/>
+                <outlet property="VCTypeOfCrimeId" destination="194" id="name-outlet-194"/>
+                <outlet property="VCEdit" destination="342" id="name-outlet-342"/>
             </connections>
         </placeholder>
-        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder" />
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="2">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="600" />
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite" />
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="182" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" text="Case ID">
+                    <rect key="frame" x="100" y="73" width="153" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Ref Number" borderStyle="roundedRect" minimumFontSize="17" id="183" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                    <rect key="frame" x="100" y="111" width="153" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="First Name" borderStyle="roundedRect" minimumFontSize="17" id="184" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                    <rect key="frame" x="100" y="149" width="153" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Second Name" borderStyle="roundedRect" minimumFontSize="17" id="185" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                    <rect key="frame" x="100" y="187" width="153" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Case Status" borderStyle="roundedRect" minimumFontSize="17" id="186" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                    <rect key="frame" x="100" y="225" width="153" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" id="188" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                    <rect key="frame" x="28" y="292" width="320" height="90"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <date key="date" timeIntervalSinceReferenceDate="332704801.65417802">
+                        <!--2011-07-18 18:00:01 +0000-->
+                    </date>
+                </datePicker>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Report Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="189" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                    <rect key="frame" x="128" y="263" width="98" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Address" borderStyle="roundedRect" minimumFontSize="17" id="190" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                    <rect key="frame" x="100" y="390" width="153" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Phone Number" borderStyle="roundedRect" minimumFontSize="17" id="191" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                    <rect key="frame" x="100" y="428" width="153" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email" borderStyle="roundedRect" minimumFontSize="17" id="192" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                    <rect key="frame" x="100" y="466" width="153" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Officer ID" borderStyle="roundedRect" minimumFontSize="17" id="193" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                    <rect key="frame" x="100" y="504" width="153" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Type of Crime ID" borderStyle="roundedRect" minimumFontSize="17" id="194" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                    <rect key="frame" x="100" y="542" width="153" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="342" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                    <rect key="frame" x="138" y="596" width="46" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Edit"/>
+                </button>
+            </subviews>
         </view>
     </objects>
+    <resources>
+        <image name="Northumbria Police Logo.PNG" width="211" height="85"/>
+        <image name="BottomBanner.png" width="840" height="196"/>
+    </resources>
 </document>

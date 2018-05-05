@@ -182,6 +182,7 @@
     <InterfaceDefinition Include="Views\MessageView.xib" />
     <InterfaceDefinition Include="Views\MenuPoliceView.xib" />
     <InterfaceDefinition Include="Views\EditCaseView.xib" />
+    <InterfaceDefinition Include="Views\CasesForModifyingView.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -245,6 +246,10 @@
     <Compile Include="Views\EditCaseView.cs" />
     <Compile Include="Views\EditCaseView.designer.cs">
       <DependentUpon>EditCaseView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CasesForModifyingView.cs" />
+    <Compile Include="Views\CasesForModifyingView.designer.cs">
+      <DependentUpon>CasesForModifyingView.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -117,6 +117,7 @@ namespace VictimApplication.Core.ViewModels
         public override async Task Initialize()
         {
             await base.Initialize();
+            currentcase = await _api.GetCaseById(currentcase.CaseId);
             UpdateFormWithCase();
         }
 

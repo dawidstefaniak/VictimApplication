@@ -23,7 +23,7 @@ namespace VictimApplication.Core.ViewModels
 
         private void ShowCasesLogin()
         {
-            ShowViewModel<CasesViewModel>();
+            ShowViewModel<CasesForModifyingViewModel>();
         }
     }
 }

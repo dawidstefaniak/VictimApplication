@@ -54,6 +54,7 @@ namespace VictimApplication.Core.ViewModels
 
         public async Task GetCases()
         {
+            
             //Data is userId parameter which will be send by API in get method
             try
             {
