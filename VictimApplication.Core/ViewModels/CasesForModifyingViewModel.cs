@@ -8,19 +8,19 @@ using VictimApplication.Core.Services;
 
 namespace VictimApplication.Core.ViewModels
 {
-    public class CasesViewModel : MvxViewModel
+    public class CasesForModifyingViewModel : MvxViewModel
     {
         private LoggedUserDto user = new LoggedUserDto();
         private readonly IApi _api;
-
+        private string _information;
         private IEnumerable<CaseDto> listofcases;
         private MvxObservableCollection<CaseDto> casesobservable = new MvxObservableCollection<CaseDto>();
 
-        public CasesViewModel(IApi api)
+        public CasesForModifyingViewModel(IApi api)
         {
             _api = api;
         }
-        private string _information;
+
         public string Information
         {
             get { return _information; }
@@ -49,7 +49,7 @@ namespace VictimApplication.Core.ViewModels
 
         public IMvxCommand ShowMenuCommand => new MvxCommand(ShowMenu);
         public IMvxCommand LoadCasesCommand => new MvxAsyncCommand(GetCases);
-        public IMvxCommand DisplayMessagesCommand => new MvxCommand<CaseDto>((currentcase) => ShowViewModel<MessangerViewModel>(currentcase));
+        public IMvxCommand EditCaseCommand => new MvxCommand<CaseDto>((currentcase) => ShowViewModel<EditCaseViewModel>(currentcase));
 
 
         public async Task GetCases()

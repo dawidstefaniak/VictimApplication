@@ -28,5 +28,7 @@ namespace VictimApplication.Core.Services
         [Post("/api/message/sendmessage")]
         Task SendMessage([Body(BodySerializationMethod.Json)] MessageForCreationDto message);
 
+        [Put("/api/case/updatecase")]
+        Task UpdateCase([Body(BodySerializationMethod.Json)] CaseDto casetoget);
     }
 }
