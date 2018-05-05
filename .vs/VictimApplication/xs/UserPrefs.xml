@@ -1,5 +1,10 @@
 ﻿<Properties StartupConfiguration="{B69E434E-C373-4F2E-BAE3-13D2B9E8F7B5}|Default">
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="VictimApplication.Core/ViewModels/EditCaseViewModel.cs">
+    <Files>
+      <File FileName="VictimApplication.iOS/Views/EditCaseView.xib" />
+      <File FileName="VictimApplication.Core/ViewModels/EditCaseViewModel.cs" Line="32" Column="34" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.VictimApplication.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.1A1CEA81-361C-4C64-BC0C-F1EDA3AA3940" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
