@@ -9,7 +9,6 @@
             <connections>
                 <outlet property="VCInformation" destination="142" id="name-outlet-142"/>
                 <outlet property="VCLogout" destination="156" id="name-outlet-156"/>
-                <outlet property="VCMessanger" destination="155" id="name-outlet-155"/>
                 <outlet property="VCPoliceDetails" destination="645" id="name-outlet-645"/>
                 <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
                 <outlet property="VCCases" destination="817" id="name-outlet-817"/>
@@ -25,23 +24,18 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Information for Victims"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="155">
-                    <rect key="frame" x="58" y="394" width="292" height="85"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Message your Police"/>
-                </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="156">
                     <rect key="frame" x="49" y="510" width="310" height="104"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Logout"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="645">
-                    <rect key="frame" x="-3" y="178" width="414" height="107"/>
+                    <rect key="frame" x="-3" y="342" width="414" height="107"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Your Police Details"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="817" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                    <rect key="frame" x="69" y="318" width="270" height="30"/>
+                    <rect key="frame" x="8" y="194" width="398" height="84"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Your Cases"/>
                 </button>

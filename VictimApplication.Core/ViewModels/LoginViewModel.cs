@@ -54,11 +54,17 @@ namespace VictimApplication.Core.ViewModels
             try
             {
                 LoggedUserDto loggedUser = await _api.Login(user);
-                ShowViewModel<MenuViewModel>();
+
                 if (loggedUser.UserType == "P")
-                    _userDialogs.Alert("Logged as Police");
-                else if (loggedUser.UserType == "U")
+                {
+                    ShowViewModel<MenuPoliceViewModel>();
+                    _userDialogs.Alert("Logged as Police"); 
+                }
+                else if(loggedUser.UserType == "U")
+                {
+                    ShowViewModel<MenuViewModel>();
                     _userDialogs.Alert("Logged as User");
+                }
             }
             catch (Exception ex)
             {

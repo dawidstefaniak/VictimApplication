@@ -6,9 +6,9 @@ using UIKit;
 
 namespace VictimApplication.iOS.Views
 {
-    public partial class MenuView : MvxViewController<MenuViewModel>
+    public partial class MenuPoliceView : MvxViewController<MenuPoliceViewModel>
     {
-        public MenuView() : base("MenuView", null)
+        public MenuPoliceView() : base("MenuPoliceView", null)
         {
         }
 
@@ -16,12 +16,7 @@ namespace VictimApplication.iOS.Views
         {
             base.ViewDidLoad();
             // Perform any additional setup after loading the view, typically from a nib.
-
-            this.CreateBinding(VCLogout).To((MenuViewModel vm) => vm.ShowLoginCommand).Apply();
-            this.CreateBinding(VCPoliceDetails).To((MenuViewModel vm) => vm.ShowPoliceDetailsCommand).Apply();
-            this.CreateBinding(VCInformation).To((MenuViewModel vm) => vm.ShowInformationCommand).Apply();
-            this.CreateBinding(VCCases).To((MenuViewModel vm) => vm.ShowCasesCommand).Apply();
-
+            this.CreateBinding(VCCases).To((MenuPoliceViewModel vm) => vm.ShowCasesCommand).Apply();
         }
 
         public override void DidReceiveMemoryWarning()
