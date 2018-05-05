@@ -16,10 +16,19 @@ namespace VictimApplication.iOS.Views
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton VCAddCase { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIButton VCCases { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
+            if (VCAddCase != null) {
+                VCAddCase.Dispose ();
+                VCAddCase = null;
+            }
+
             if (VCCases != null) {
                 VCCases.Dispose ();
                 VCCases = null;
