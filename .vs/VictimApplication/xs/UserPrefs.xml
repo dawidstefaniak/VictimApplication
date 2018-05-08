@@ -1,12 +1,17 @@
 ﻿<Properties StartupConfiguration="{B69E434E-C373-4F2E-BAE3-13D2B9E8F7B5}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="VictimApplication.Core/ViewModels/EditCaseViewModel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="VictimApplication.iOS/Views/EditCaseView.xib">
     <Files>
       <File FileName="VictimApplication.iOS/Views/EditCaseView.xib" />
       <File FileName="VictimApplication.Core/ViewModels/EditCaseViewModel.cs" Line="32" Column="34" />
+      <File FileName="VictimApplication.iOS/Main.storyboard" />
+      <File FileName="VictimApplication.iOS/Views/MenuView.xib" />
+      <File FileName="VictimApplication.iOS/Views/CasesView.cs" Line="1" Column="1" />
+      <File FileName="VictimApplication.iOS/Views/LoginView.xib" />
+      <File FileName="VictimApplication.iOS/Views/LoginView.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.VictimApplication.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.1A1CEA81-361C-4C64-BC0C-F1EDA3AA3940" />
+  <MonoDevelop.Ide.ItemProperties.VictimApplication.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.58E191D2-A15C-46C2-9243-BBE0556B34D2" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
