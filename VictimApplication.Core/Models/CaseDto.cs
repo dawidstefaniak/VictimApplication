@@ -24,6 +24,6 @@ namespace VictimApplication.Core.Models
 
         public string Email { get; set; }
         public int OfficerId{ get; set; }
-        public int TypeOfCrimeId {get;set;}
+        public string TypeOfCrime {get;set;}
     }
 }

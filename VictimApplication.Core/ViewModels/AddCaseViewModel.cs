@@ -9,23 +9,19 @@ using VictimApplication.Core.Services;
 
 namespace VictimApplication.Core.ViewModels
 {
-	public class EditCaseViewModel : MvxViewModel<CaseDto>
+    public class AddCaseViewModel : MvxViewModel
     {
         private readonly IApi _api;
         private readonly IUserDialogs _userDialogs;
-		public EditCaseViewModel (IApi api, IUserDialogs userDialogs)
+
+        public AddCaseViewModel(IApi api, IUserDialogs userDialogs)
         {
             _api = api;
             _userDialogs = userDialogs;
         }
-        private CaseDto currentcase;
 
-        private int _caseId;
-        public int CaseId
-        {
-            get { return _caseId; }
-            set { SetProperty(ref _caseId, value); }
-        }
+		private CaseDto currentcase;
+        
         private string _refNumber;
         public string RefNumber
         {
@@ -51,7 +47,7 @@ namespace VictimApplication.Core.ViewModels
             set { SetProperty(ref _caseStatus, value); }
         }
         private DateTime _reportDate;
-        public  DateTime ReportDate
+        public DateTime ReportDate
         {
             get { return _reportDate; }
             set { SetProperty(ref _reportDate, value); }
@@ -86,59 +82,37 @@ namespace VictimApplication.Core.ViewModels
             get { return _typeOfCrime; }
             set { SetProperty(ref _typeOfCrime, value); }
         }
-        public IMvxCommand EditCaseCommand => new MvxAsyncCommand(EditCase);
+		public IMvxCommand AddCaseCommand => new MvxAsyncCommand(AddCase);
 
-        public async Task EditCase()
-        {
-            var CaseToEdit = new CaseDto
-            {
-                CaseId = CaseId,
-                RefNumber = RefNumber,
-                FirstName = FirstName,
-                SecondName = SecondName,
-                CaseStatus = CaseStatus,
-                ReportDate = ReportDate,
-                Address = Address,
-                PhoneNumber = PhoneNumber,
-                Email = Email,
-                OfficerId = OfficerId,
-                TypeOfCrime = TypeOfCrime
-            };
-            await _api.UpdateCase(CaseToEdit);
-            Close(this);
-            _userDialogs.Alert("Case updated!");
-        }
+		public async Task AddCase()
+		{
+			var CaseToAdd = new CaseForCreationDto
+			{
+				RefNumber = RefNumber,
+				FirstName = FirstName,
+				SecondName = SecondName,
+				CaseStatus = CaseStatus,
+				ReportDate = ReportDate,
+				Address = Address,
+				PhoneNumber = PhoneNumber,
+				Email = Email,
+				OfficerId = OfficerId,
+				TypeOfCrime = TypeOfCrime
+			};
 
-        public override void Prepare(CaseDto parameter)
-        {
-            
-        }
+			await _api.CreateCase(CaseToAdd);
+			Close(this);
+			_userDialogs.Alert("Case Added!");
+		}
 
         public override async Task Initialize()
         {
             await base.Initialize();
-            currentcase = await _api.GetCaseById(currentcase.CaseId);
-            UpdateFormWithCase();
         }
 
         public void Init(CaseDto parameter)
         {
             currentcase = parameter;
-        }
-
-        public void UpdateFormWithCase()
-        {
-            CaseId = currentcase.CaseId;
-            RefNumber = currentcase.RefNumber;
-            FirstName = currentcase.FirstName;
-            SecondName = currentcase.SecondName;
-            CaseStatus = currentcase.CaseStatus;
-            ReportDate = currentcase.ReportDate;
-            Address = currentcase.Address;
-            PhoneNumber = currentcase.PhoneNumber;
-            Email = currentcase.Email;
-            OfficerId = currentcase.OfficerId;
-            TypeOfCrime = currentcase.TypeOfCrime;
         }
 
     }

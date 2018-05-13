@@ -23,5 +23,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Properties\AssemblyInfo.cs" />
+    <Compile Remove="Models\TypeOfCrimeDto.cs" />
+    <Compile Remove="Models\TypeOfCrimeForCreationDto.cs" />
+    <Compile Remove="Models\TypeOfCrimeToReturnDto.cs" />
   </ItemGroup>
 </Project>

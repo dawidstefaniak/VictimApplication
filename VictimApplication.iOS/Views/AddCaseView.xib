@@ -8,10 +8,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditCaseView">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddCaseView">
             <connections>
                 <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
-                <outlet property="VCCaseId" destination="182" id="name-outlet-182"/>
                 <outlet property="VCRefNumber" destination="183" id="name-outlet-183"/>
                 <outlet property="VCFirstName" destination="184" id="name-outlet-184"/>
                 <outlet property="VCSecondName" destination="185" id="name-outlet-185"/>
@@ -22,7 +21,7 @@
                 <outlet property="VCEmail" destination="192" id="name-outlet-192"/>
                 <outlet property="VCOfficerId" destination="193" id="name-outlet-193"/>
                 <outlet property="VCTypeOfCrime" destination="194" id="name-outlet-194"/>
-                <outlet property="VCEdit" destination="342" id="name-outlet-342"/>
+                <outlet property="VCAdd" destination="342" id="name-outlet-342"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -31,16 +30,6 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <subviews>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="182" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" text="Case ID">
-                    <rect key="frame" x="100" y="73" width="153" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <nil key="textColor"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                    <accessibility key="accessibilityConfiguration">
-                        <accessibilityTraits key="traits" notEnabled="YES"/>
-                    </accessibility>
-                </textField>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Ref Number" borderStyle="roundedRect" minimumFontSize="17" id="183" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
                     <rect key="frame" x="100" y="111" width="153" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -124,15 +113,8 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="342" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
                     <rect key="frame" x="138" y="596" width="46" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Edit"/>
+                    <state key="normal" title="Add Case"/>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Case ID:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="740" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                    <rect key="frame" x="14" y="78" width="70" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="749" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" text="Ref Number:">
                     <rect key="frame" x="0.0" y="116" width="104" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>

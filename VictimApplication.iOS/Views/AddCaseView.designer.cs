@@ -11,24 +11,20 @@ using UIKit;
 
 namespace VictimApplication.iOS.Views
 {
-    [Register ("EditCaseView")]
-    partial class EditCaseView
+    [Register ("AddCaseView")]
+    partial class AddCaseView
     {
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton VCAdd { get; set; }
+
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UITextField VCAddress { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UITextField VCCaseId { get; set; }
-
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UITextField VCCaseStatus { get; set; }
-
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIButton VCEdit { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
@@ -64,24 +60,19 @@ namespace VictimApplication.iOS.Views
 
         void ReleaseDesignerOutlets ()
         {
+            if (VCAdd != null) {
+                VCAdd.Dispose ();
+                VCAdd = null;
+            }
+
             if (VCAddress != null) {
                 VCAddress.Dispose ();
                 VCAddress = null;
             }
 
-            if (VCCaseId != null) {
-                VCCaseId.Dispose ();
-                VCCaseId = null;
-            }
-
             if (VCCaseStatus != null) {
                 VCCaseStatus.Dispose ();
                 VCCaseStatus = null;
-            }
-
-            if (VCEdit != null) {
-                VCEdit.Dispose ();
-                VCEdit = null;
             }
 
             if (VCEmail != null) {

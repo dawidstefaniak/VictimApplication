@@ -25,5 +25,12 @@ namespace VictimApplication.Core.ViewModels
         {
             ShowViewModel<CasesForModifyingViewModel>();
         }
+
+		public IMvxCommand ShowAddCaseCommand => new MvxCommand(ShowAddCase);
+
+        private void ShowAddCase()
+		{
+			ShowViewModel<AddCaseViewModel>();
+		}
     }
 }

@@ -17,6 +17,7 @@ namespace VictimApplication.iOS.Views
             base.ViewDidLoad();
             // Perform any additional setup after loading the view, typically from a nib.
             this.CreateBinding(VCCases).To((MenuPoliceViewModel vm) => vm.ShowCasesCommand).Apply();
+			this.CreateBinding(VCAddCase).To((MenuPoliceViewModel vm) => vm.ShowAddCaseCommand).Apply();
         }
 
         public override void DidReceiveMemoryWarning()
