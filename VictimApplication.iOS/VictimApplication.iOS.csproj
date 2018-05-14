@@ -185,6 +185,8 @@
     <InterfaceDefinition Include="Views\CasesForModifyingView.xib" />
     <InterfaceDefinition Include="Views\AddCaseView.xib" />
     <InterfaceDefinition Include="Views\UserListCell.xib" />
+    <InterfaceDefinition Include="Views\UserListView.xib" />
+    <InterfaceDefinition Include="Views\EditUserView.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -260,6 +262,14 @@
     <Compile Include="Views\UserListCell.cs" />
     <Compile Include="Views\UserListCell.designer.cs">
       <DependentUpon>UserListCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserListView.cs" />
+    <Compile Include="Views\UserListView.designer.cs">
+      <DependentUpon>UserListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EditUserView.cs" />
+    <Compile Include="Views\EditUserView.designer.cs">
+      <DependentUpon>EditUserView.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

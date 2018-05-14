@@ -1,12 +1,7 @@
 ﻿<Properties StartupConfiguration="{B69E434E-C373-4F2E-BAE3-13D2B9E8F7B5}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="VictimApplication.iOS/Views/UserListCell.xib">
+  <MonoDevelop.Ide.Workbench ActiveDocument="VictimApplication.iOS/Views/EditUserView.xib">
     <Files>
-      <File FileName="VictimApplication.iOS/Views/MenuPoliceView.xib" />
-      <File FileName="VictimApplication.iOS/Views/UserListCell.cs" Line="27" Column="37" />
-      <File FileName="VictimApplication.iOS/Views/CaseCell.cs" Line="1" Column="1" />
-      <File FileName="VictimApplication.Core/Models/UserListToReturnDto.cs" Line="10" Column="38" />
-      <File FileName="VictimApplication.Core/Models/MessageForCreationDto.cs" Line="7" Column="11" />
-      <File FileName="VictimApplication.iOS/Views/UserListCell.xib" />
+      <File FileName="VictimApplication.iOS/Views/EditUserView.xib" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

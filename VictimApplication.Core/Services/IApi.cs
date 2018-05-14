@@ -10,9 +10,9 @@ namespace VictimApplication.Core.Services
     {
 
         [Get("/api/user/getuser/1")]
-        Task<String> GetDefaultUser();
-
-        [Post("/api/user/createuser")]
+		Task<String> GetDefaultUser();
+		
+		[Post("/api/user/createuser")]
         Task CreateUser([Body(BodySerializationMethod.Json)] UserForCreationDto user);
 
         [Post("/api/user/login")]
@@ -26,16 +26,25 @@ namespace VictimApplication.Core.Services
         Task<IEnumerable<MessageDto>> GetListOfMessagesForCase([AliasAs("caseId")]int caseId);
 
         [Post("/api/message/sendmessage")]
-        Task SendMessage([Body(BodySerializationMethod.Json)] MessageForCreationDto message);
-
+		Task SendMessage([Body(BodySerializationMethod.Json)] MessageForCreationDto message);
+        
         [Put("/api/case/updatecase")]
-        Task UpdateCase([Body(BodySerializationMethod.Json)] CaseDto casetoget);
-
+		Task UpdateCase([Body(BodySerializationMethod.Json)] CaseDto caseToUpdate);
+        
         [Get("/api/case/getcasebyid/{caseId}")]
         Task<CaseDto> GetCaseById([AliasAs("caseId")] int caseId);
 
 		[Post("/api/case/createCase")]
 		Task CreateCase([Body(BodySerializationMethod.Json)] CaseForCreationDto caseForCreation);
+
+		[Get("/api/user/getListOfUsers")]
+		Task<IEnumerable<UserListToReturnDto>> GetListOfUsers();
+
+		[Put("/api/user/updateUser")]
+		Task UpdateUser([Body(BodySerializationMethod.Json)] UserListToReturnDto userToUpdate);
+
+		[Get("/api/user/getUserToEdit/{userId}")]
+		Task<UserListToReturnDto> GetUserToEdit([AliasAs("userId")]int userId);
 
     }
 }

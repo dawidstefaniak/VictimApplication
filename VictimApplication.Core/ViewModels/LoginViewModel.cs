@@ -65,6 +65,11 @@ namespace VictimApplication.Core.ViewModels
                     ShowViewModel<MenuViewModel>();
                     _userDialogs.Alert("Logged as User");
                 }
+				else
+				{
+					ShowViewModel<MenuPoliceViewModel>();
+					_userDialogs.Alert("Logged as Admin");
+				}
             }
             catch (Exception ex)
             {
