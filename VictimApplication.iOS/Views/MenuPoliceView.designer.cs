@@ -22,6 +22,10 @@ namespace VictimApplication.iOS.Views
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIButton VCCases { get; set; }
 
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton VCGivePoliceRights { get; set; }
+
         void ReleaseDesignerOutlets ()
         {
             if (VCAddCase != null) {
@@ -32,6 +36,11 @@ namespace VictimApplication.iOS.Views
             if (VCCases != null) {
                 VCCases.Dispose ();
                 VCCases = null;
+            }
+
+            if (VCGivePoliceRights != null) {
+                VCGivePoliceRights.Dispose ();
+                VCGivePoliceRights = null;
             }
         }
     }
