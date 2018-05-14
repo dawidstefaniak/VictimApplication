@@ -42,6 +42,10 @@ namespace VictimApplication.iOS.Views
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIButton VCRegister { get; set; }
 
+        [Action ("VCLoginToMenu_TouchUpInside:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void VCLoginToMenu_TouchUpInside (UIKit.UIButton sender);
+
         void ReleaseDesignerOutlets ()
         {
             if (NorthumbriaLogo != null) {
