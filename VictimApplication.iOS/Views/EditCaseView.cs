@@ -17,7 +17,6 @@ namespace VictimApplication.iOS.Views
             base.ViewDidLoad();
             // Perform any additional setup after loading the view, typically from a nib.
             this.CreateBinding(VCEmail).To((EditCaseViewModel vm) => vm.Email).Apply();
-            this.CreateBinding(VCCaseId).To((EditCaseViewModel vm) => vm.CaseId).Apply();
             this.CreateBinding(VCAddress).To((EditCaseViewModel vm) => vm.Address).Apply();
             this.CreateBinding(VCFirstName).To((EditCaseViewModel vm) => vm.FirstName).Apply();
             this.CreateBinding(VCOfficerId).To((EditCaseViewModel vm) => vm.OfficerId).Apply();

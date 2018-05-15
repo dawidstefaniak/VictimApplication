@@ -26,10 +26,6 @@ namespace VictimApplication.iOS.Views
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIButton VCLogout { get; set; }
 
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIButton VCPoliceDetails { get; set; }
-
         void ReleaseDesignerOutlets ()
         {
             if (VCCases != null) {
@@ -45,11 +41,6 @@ namespace VictimApplication.iOS.Views
             if (VCLogout != null) {
                 VCLogout.Dispose ();
                 VCLogout = null;
-            }
-
-            if (VCPoliceDetails != null) {
-                VCPoliceDetails.Dispose ();
-                VCPoliceDetails = null;
             }
         }
     }

@@ -15,11 +15,11 @@ namespace VictimApplication.iOS.Views
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UILabel VCCaseName { get; set; }
+        UIKit.UILabel VCDate { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UILabel VCDate { get; set; }
+        UIKit.UILabel VCName { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
@@ -27,14 +27,14 @@ namespace VictimApplication.iOS.Views
 
         void ReleaseDesignerOutlets ()
         {
-            if (VCCaseName != null) {
-                VCCaseName.Dispose ();
-                VCCaseName = null;
-            }
-
             if (VCDate != null) {
                 VCDate.Dispose ();
                 VCDate = null;
+            }
+
+            if (VCName != null) {
+                VCName.Dispose ();
+                VCName = null;
             }
 
             if (VCStatus != null) {

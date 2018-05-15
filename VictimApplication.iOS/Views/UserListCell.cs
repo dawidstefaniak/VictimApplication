@@ -25,6 +25,7 @@ namespace VictimApplication.iOS.Views
 				var set = this.CreateBindingSet<UserListCell, UserListToReturnDto>();
 				set.Bind(VCName).To(m => m.NameToReturn).Apply();
 				set.Bind(VCUserType).To(m => m.UserTypeToReturn).Apply();
+				set.Bind(VCId).To(m => m.userId).Apply();
             });
         }
     }

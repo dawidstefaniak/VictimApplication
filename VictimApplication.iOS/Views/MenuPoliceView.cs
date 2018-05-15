@@ -19,6 +19,7 @@ namespace VictimApplication.iOS.Views
             this.CreateBinding(VCCases).To((MenuPoliceViewModel vm) => vm.ShowCasesCommand).Apply();
 			this.CreateBinding(VCAddCase).To((MenuPoliceViewModel vm) => vm.ShowAddCaseCommand).Apply();
 			this.CreateBinding(VCGivePoliceRights).To((MenuPoliceViewModel vm) => vm.EditUserCommand).Apply();
+			this.CreateBinding(VCMessanger).To((MenuPoliceViewModel vm) => vm.ShowMessangerCommand).Apply();
         }
 
         public override void DidReceiveMemoryWarning()

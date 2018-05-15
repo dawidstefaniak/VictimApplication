@@ -14,7 +14,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="125"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="167" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" text="Case">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="167" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" text="Name">
                         <rect key="frame" x="146" y="0.0" width="169" height="44"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -35,8 +35,8 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ref number:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="517" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                        <rect key="frame" x="39" y="0.0" width="104" height="44"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="517" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" text="Victim:">
+                        <rect key="frame" x="73" y="0.0" width="63" height="44"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
@@ -59,15 +59,11 @@
                 </subviews>
             </tableViewCellContentView>
             <connections>
-                <outlet property="VCCaseName" destination="167" id="name-outlet-167"/>
+                <outlet property="VCName" destination="167" id="name-outlet-167"/>
                 <outlet property="VCStatus" destination="341" id="name-outlet-341"/>
                 <outlet property="VCDate" destination="342" id="name-outlet-342"/>
             </connections>
             <point key="canvasLocation" x="31" y="94"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="Northumbria Police Logo.PNG" width="211" height="85"/>
-        <image name="BottomBanner.png" width="840" height="196"/>
-    </resources>
 </document>

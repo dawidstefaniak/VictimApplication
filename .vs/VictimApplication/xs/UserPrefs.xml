@@ -1,14 +1,19 @@
 ﻿<Properties StartupConfiguration="{B69E434E-C373-4F2E-BAE3-13D2B9E8F7B5}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="VictimApplication.iOS/Views/LoginView.xib">
+  <MonoDevelop.Ide.Workbench ActiveDocument="VictimApplication.iOS/Views/CasesView.cs">
     <Files>
-      <File FileName="VictimApplication.iOS/Views/EditUserView.xib" />
-      <File FileName="VictimApplication.iOS/Views/LoginView.cs" Line="1" Column="1" />
-      <File FileName="VictimApplication.iOS/Views/EditCaseView.cs" Line="1" Column="1" />
-      <File FileName="VictimApplication.iOS/Views/EditCaseView.xib" />
-      <File FileName="VictimApplication.iOS/Main.cs" Line="12" Column="1" />
-      <File FileName="VictimApplication.Core/ViewModels/UserListViewModel.cs" Line="1" Column="1" />
-      <File FileName="VictimApplication.Core/ViewModels/LoginViewModel.cs" Line="76" Column="48" />
+      <File FileName="VictimApplication.iOS/Views/MenuView.xib" />
       <File FileName="VictimApplication.iOS/Views/LoginView.xib" />
+      <File FileName="VictimApplication.iOS/Views/MenuPoliceView.xib" />
+      <File FileName="VictimApplication.iOS/Views/MenuView.cs" Line="31" Column="6" />
+      <File FileName="VictimApplication.iOS/Views/UserListCell.cs" Line="28" Column="46" />
+      <File FileName="VictimApplication.iOS/Views/UserListCell.xib" />
+      <File FileName="VictimApplication.iOS/Views/MessangerView.cs" Line="1" Column="1" />
+      <File FileName="VictimApplication.Core/ViewModels/MessangerViewModel.cs" Line="1" Column="1" />
+      <File FileName="VictimApplication.Core/ViewModels/CasesViewModel.cs" Line="1" Column="1" />
+      <File FileName="VictimApplication.Core/ViewModels/MenuPoliceViewModel.cs" Line="34" Column="3" />
+      <File FileName="VictimApplication.iOS/Views/MenuPoliceView.cs" Line="22" Column="100" />
+      <File FileName="VictimApplication.iOS/Views/MessageView.cs" Line="21" Column="70" />
+      <File FileName="VictimApplication.iOS/Views/CasesView.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

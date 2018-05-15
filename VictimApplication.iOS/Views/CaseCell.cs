@@ -23,7 +23,7 @@ namespace VictimApplication.iOS.Views
             this.DelayBind(() =>
             {
                 var set = this.CreateBindingSet<CaseCell, CaseDto>();
-                set.Bind(VCCaseName).To(m => m.RefNumber).Apply();
+				set.Bind(VCName).To(m => m.FullName).Apply();
                 set.Bind(VCStatus).To(m => m.CaseStatus).Apply();
                 set.Bind(VCDate).To(m => m.ReportDate).Apply();
             });

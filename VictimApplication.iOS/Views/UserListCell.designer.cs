@@ -15,6 +15,10 @@ namespace VictimApplication.iOS.Views
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel VCId { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UILabel VCName { get; set; }
 
         [Outlet]
@@ -23,6 +27,11 @@ namespace VictimApplication.iOS.Views
 
         void ReleaseDesignerOutlets ()
         {
+            if (VCId != null) {
+                VCId.Dispose ();
+                VCId = null;
+            }
+
             if (VCName != null) {
                 VCName.Dispose ();
                 VCName = null;

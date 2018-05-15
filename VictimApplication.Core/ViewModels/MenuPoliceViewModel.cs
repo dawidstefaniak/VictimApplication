@@ -21,7 +21,7 @@ namespace VictimApplication.Core.ViewModels
 
         private void ShowMessanger()
         {
-            ShowViewModel<MessangerViewModel>();
+			ShowViewModel<CasesViewModel>();
         }
 
         public IMvxCommand ShowLoginCommand => new MvxCommand(ShowLogin);

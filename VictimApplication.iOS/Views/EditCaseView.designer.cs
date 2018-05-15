@@ -20,10 +20,6 @@ namespace VictimApplication.iOS.Views
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UITextField VCCaseId { get; set; }
-
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UITextField VCCaseStatus { get; set; }
 
         [Outlet]
@@ -48,7 +44,7 @@ namespace VictimApplication.iOS.Views
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UITextField VCRefNumber { get; set; }
+        UIKit.UILabel VCRefNumber { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
@@ -67,11 +63,6 @@ namespace VictimApplication.iOS.Views
             if (VCAddress != null) {
                 VCAddress.Dispose ();
                 VCAddress = null;
-            }
-
-            if (VCCaseId != null) {
-                VCCaseId.Dispose ();
-                VCCaseId = null;
             }
 
             if (VCCaseStatus != null) {
