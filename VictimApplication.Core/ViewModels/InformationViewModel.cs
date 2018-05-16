@@ -19,7 +19,7 @@ namespace VictimApplication.Core.ViewModels
         public override async Task Initialize()
         {
             await base.Initialize();
-            Information = user.UserId.ToString();
+            Information = "Information For Victims of Crime can be accessed on https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/470947/victims-of-crime-leaflet.pdf";
             // do something with _initialParameter
         }
 

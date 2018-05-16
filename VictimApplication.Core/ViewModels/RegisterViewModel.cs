@@ -103,7 +103,7 @@ namespace VictimApplication.Core.ViewModels
 			}
 			if (Password.Length < 4 || Password.Length > 17)
             {
-                _userDialogs.Alert("Login has to be between 4 and 16 characters.");
+                _userDialogs.Alert("Password has to be between 4 and 16 characters.");
                 return false;
             }
 			if(Firstname.Length<2 || Surname.Length<2 || Firstname.Length>50 || Surname.Length>50)

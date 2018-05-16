@@ -1,16 +1,10 @@
 ﻿<Properties StartupConfiguration="{B69E434E-C373-4F2E-BAE3-13D2B9E8F7B5}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="VictimApplication.Core/ViewModels/RegisterViewModel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="VictimApplication.Core/ViewModels/InformationViewModel.cs">
     <Files>
       <File FileName="VictimApplication.iOS/Views/MessagesCell.xib" />
-      <File FileName="VictimApplication.iOS/Views/MessangerView.cs" Line="25" Column="99" />
-      <File FileName="VictimApplication.Core/ViewModels/MessageViewModel.cs" Line="25" Column="35" />
-      <File FileName="VictimApplication.Core/Models/MessageDto.cs" Line="19" Column="3" />
-      <File FileName="VictimApplication.Core/ViewModels/EditCaseViewModel.cs" Line="104" Column="38" />
-      <File FileName="VictimApplication.Core/ViewModels/AddCaseViewModel.cs" Line="76" Column="30" />
-      <File FileName="VictimApplication.Core/ViewModels/MenuPoliceViewModel.cs" Line="11" Column="3" />
-      <File FileName="VictimApplication.iOS/Views/AddCaseView.xib" />
-      <File FileName="VictimApplication.iOS/Views/AddCaseView.cs" Line="23" Column="86" />
-      <File FileName="VictimApplication.Core/ViewModels/RegisterViewModel.cs" Line="81" Column="24" />
+      <File FileName="VictimApplication.iOS/Views/InformationView.xib" />
+      <File FileName="VictimApplication.iOS/Views/InformationView.cs" Line="20" Column="103" />
+      <File FileName="VictimApplication.Core/ViewModels/InformationViewModel.cs" Line="22" Column="35" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

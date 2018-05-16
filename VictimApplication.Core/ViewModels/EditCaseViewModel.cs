@@ -104,9 +104,16 @@ namespace VictimApplication.Core.ViewModels
                 OfficerId = OfficerId,
                 TypeOfCrime = TypeOfCrime
             };
-            await _api.UpdateCase(CaseToEdit);
-            Close(this);
-            _userDialogs.Alert("Case updated!");
+            try
+            {
+                await _api.UpdateCase(CaseToEdit);
+                Close(this);
+                _userDialogs.Alert("Case updated!");
+            }
+            catch
+            {
+                _userDialogs.Alert("We had a problem handling your request.");
+            }
         }
 
         public override void Prepare(CaseDto parameter)

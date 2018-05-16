@@ -16,31 +16,13 @@ namespace VictimApplication.iOS.Views
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIButton VCBack { get; set; }
-
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UILabel VCInformation { get; set; }
-
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIButton VCMoreInfo { get; set; }
+        UIKit.UITextView VCInformation { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
-            if (VCBack != null) {
-                VCBack.Dispose ();
-                VCBack = null;
-            }
-
             if (VCInformation != null) {
                 VCInformation.Dispose ();
                 VCInformation = null;
-            }
-
-            if (VCMoreInfo != null) {
-                VCMoreInfo.Dispose ();
-                VCMoreInfo = null;
             }
         }
     }

@@ -18,7 +18,6 @@ namespace VictimApplication.iOS.Views
             // Perform any additional setup after loading the view, typically from a nib.
 
             this.CreateBinding(VCInformation).To((InformationViewModel vm) => vm.Information).Apply();
-            this.CreateBinding(VCBack).To((InformationViewModel vm) => vm.ShowMenuCommand).Apply();
 
         }
 
