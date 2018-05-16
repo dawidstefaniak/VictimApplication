@@ -13,6 +13,7 @@ namespace VictimApplication.Core.ViewModels
     {
         private readonly IApi _api;
         private readonly IUserDialogs _userDialogs;
+		private LoggedUserDto user = new LoggedUserDto();
 
         public AddCaseViewModel(IApi api, IUserDialogs userDialogs)
         {
@@ -70,11 +71,9 @@ namespace VictimApplication.Core.ViewModels
             get { return _email; }
             set { SetProperty(ref _email, value); }
         }
-        private int _officerId;
         public int OfficerId
         {
-            get { return _officerId; }
-            set { SetProperty(ref _officerId, value); }
+			get { return user.UserId; }
         }
         private string _typeOfCrime;
         public string TypeOfCrime

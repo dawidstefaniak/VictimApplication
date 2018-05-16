@@ -17,7 +17,14 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MessageText" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="180" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                        <rect key="frame" x="95" y="1" width="225" height="38"/>
+                        <rect key="frame" x="63" y="1" width="257" height="38"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="422" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" text="UserType">
+                        <rect key="frame" x="0.0" y="8" width="55" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
@@ -27,12 +34,9 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="VCMessage" destination="180" id="name-outlet-180"/>
+                <outlet property="VCUserIdentity" destination="422" id="name-outlet-422"/>
             </connections>
             <point key="canvasLocation" x="-1" y="6"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="Northumbria Police Logo.PNG" width="211" height="85"/>
-        <image name="BottomBanner.png" width="840" height="196"/>
-    </resources>
 </document>

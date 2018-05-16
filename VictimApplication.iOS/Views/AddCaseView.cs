@@ -21,7 +21,6 @@ namespace VictimApplication.iOS.Views
 			this.CreateBinding(VCEmail).To((AddCaseViewModel vm) => vm.Email).Apply();
 			this.CreateBinding(VCAddress).To((AddCaseViewModel vm) => vm.Address).Apply();
 			this.CreateBinding(VCFirstName).To((AddCaseViewModel vm) => vm.FirstName).Apply();
-			this.CreateBinding(VCOfficerId).To((AddCaseViewModel vm) => vm.OfficerId).Apply();
 			this.CreateBinding(VCRefNumber).To((AddCaseViewModel vm) => vm.RefNumber).Apply();
 			this.CreateBinding(VCCaseStatus).To((AddCaseViewModel vm) => vm.CaseStatus).Apply();
 			this.CreateBinding(VCReportDate).To((AddCaseViewModel vm) => vm.ReportDate).Apply();

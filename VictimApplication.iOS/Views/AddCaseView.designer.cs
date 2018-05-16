@@ -36,10 +36,6 @@ namespace VictimApplication.iOS.Views
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UITextField VCOfficerId { get; set; }
-
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UITextField VCPhoneNumber { get; set; }
 
         [Outlet]
@@ -83,11 +79,6 @@ namespace VictimApplication.iOS.Views
             if (VCFirstName != null) {
                 VCFirstName.Dispose ();
                 VCFirstName = null;
-            }
-
-            if (VCOfficerId != null) {
-                VCOfficerId.Dispose ();
-                VCOfficerId = null;
             }
 
             if (VCPhoneNumber != null) {

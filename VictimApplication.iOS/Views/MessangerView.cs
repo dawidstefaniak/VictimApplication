@@ -29,7 +29,7 @@ namespace VictimApplication.iOS.Views
             VCMessages.ReloadData();
 
             this.CreateBinding(VCSend).To((MessangerViewModel vm) => vm.SendMessageCommand).Apply();
-            this.CreateBinding(VCText).To((MessangerViewModel vm) => vm.Message).Apply();
+			this.CreateBinding(VCText).To((MessangerViewModel vm) => vm.Message).Apply();
             //View.AddGestureRecognizer(new UITapGestureRecognizer(() => {
             //    this.VCText.ResignFirstResponder();
             //}));

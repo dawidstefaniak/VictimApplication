@@ -24,7 +24,9 @@ namespace VictimApplication.iOS.Views
             {
                 var set = this.CreateBindingSet<MessagesCell, MessageDto>();
                 set.Bind(VCMessage).To(m => m.MessageText).Apply();
+				set.Bind(VCUserIdentity).To(m => m.GetUserType).Apply();
             });
+            
         }
     }
 }

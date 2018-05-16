@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
+using System.Linq;
 using Acr.UserDialogs;
 using MvvmCross.Core.ViewModels;
 using MvvmCross.Platform;
@@ -69,23 +70,54 @@ namespace VictimApplication.Core.ViewModels
 
         async Task Register()
         {
-            var UserForCreation = new UserForCreationDto
-            {
-                UserName = Login,
-                Password = this.Password,
-                FirstName = this.Firstname,
-                SecondName = this.Surname,
-                Email = this.Email
-            };
-            try
-            {
-                await _api.CreateUser(UserForCreation);
-            }
-            catch(Exception ex)
-            {
-                _userDialogs.Alert(ex.Message, "Error", "OK");
-            }
-            Close(this);
+			if (CheckFields())
+			{
+				var UserForCreation = new UserForCreationDto
+				{
+					UserName = Login,
+					Password = this.Password,
+					FirstName = this.Firstname,
+					SecondName = this.Surname,
+					Email = this.Email
+				};
+				try
+				{
+					await _api.CreateUser(UserForCreation);
+					Close(this);
+                    _userDialogs.Alert("Succesfully Registered! Now you can login to your account.");
+				}
+				catch (Exception ex)
+				{
+					Close(this);
+					_userDialogs.Alert("Registration unsuccesfull.", "Error", "OK");
+				}            
+			}
         }
+
+		private bool CheckFields()
+		{
+			if(Login.Length<4 || Login.Length>17)
+			{
+				_userDialogs.Alert("Login has to be between 4 and 16 characters.");
+				return false;
+			}
+			if (Password.Length < 4 || Password.Length > 17)
+            {
+                _userDialogs.Alert("Login has to be between 4 and 16 characters.");
+                return false;
+            }
+			if(Firstname.Length<2 || Surname.Length<2 || Firstname.Length>50 || Surname.Length>50)
+			{
+				_userDialogs.Alert("Please check your name.");
+				return false;
+			}
+			if(!Email.Contains('@') || Email.Contains(' '))
+			{
+				_userDialogs.Alert("Please write correct E-mail");
+				return false;
+			}
+			return true;
+		}
+
     }
 }

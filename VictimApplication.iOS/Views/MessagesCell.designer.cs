@@ -17,11 +17,20 @@ namespace VictimApplication.iOS.Views
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UILabel VCMessage { get; set; }
 
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel VCUserIdentity { get; set; }
+
         void ReleaseDesignerOutlets ()
         {
             if (VCMessage != null) {
                 VCMessage.Dispose ();
                 VCMessage = null;
+            }
+
+            if (VCUserIdentity != null) {
+                VCUserIdentity.Dispose ();
+                VCUserIdentity = null;
             }
         }
     }

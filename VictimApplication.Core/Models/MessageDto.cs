@@ -16,5 +16,17 @@ namespace VictimApplication.Core.Models
         public string MessageText { get; set; }
 
         public DateTime SentDate { get; set; }
+
+		public string GetUserType
+        {
+            get
+            {
+                if (IsPoliceSender == true)
+                {
+                    return "Police";
+                }
+                return "User";
+            }
+        }
     }
 }
