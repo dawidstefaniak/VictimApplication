@@ -25,7 +25,7 @@ namespace VictimApplication.Core
             //API
             Mvx.RegisterType(() =>
             {
-                var client = "http://messangesapi20180515093407.azurewebsites.net";
+                var client = "http://localhost:63082";
                 return RestService.For<Services.IApi>(client);
             });
             //UserDialogs
